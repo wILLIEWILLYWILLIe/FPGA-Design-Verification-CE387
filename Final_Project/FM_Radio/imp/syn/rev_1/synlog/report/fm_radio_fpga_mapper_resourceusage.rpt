@@ -2,15 +2,15 @@
 Design view:work.fm_radio_top(verilog)
 Selecting part EP4CE115F23C7
 
-Total combinational functions 29764 of 114480 (25%)
+Total combinational functions 21948 of 114480 (19%)
 Logic element usage by number of inputs
-		  4 input functions 	 179
-		  3 input functions 	 6089
-		  <=2 input functions 	 23496
+		  4 input functions 	 599
+		  3 input functions 	 248
+		  <=2 input functions 	 21101
 Logic elements by mode
-		  normal mode            6858
-		  arithmetic mode        22906
-Total registers 4133 of 114480 ( 3%)
+		  normal mode            932
+		  arithmetic mode        21016
+Total registers 11626 of 114480 (10%)
 I/O pins 132 of 529 (25%), total I/O based on largest package of this part.
 
 Number of I/O registers

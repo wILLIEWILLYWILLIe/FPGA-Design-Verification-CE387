@@ -5,15 +5,15 @@
 
 #### START OF CLOCK OPTIMIZATION REPORT #####[
 
-1 non-gated/non-generated clock tree(s) driving 4142 clock pin(s) of sequential element(s)
+1 non-gated/non-generated clock tree(s) driving 11635 clock pin(s) of sequential element(s)
 0 gated/generated clock tree(s) driving 0 clock pin(s) of sequential element(s)
 0 instances converted, 0 sequential instances remain driven by gated/generated clocks
 
-============================ Non-Gated/Non-Generated Clocks =============================
-Clock Tree ID     Driving Element     Drive Element Type     Fanout     Sample Instance  
------------------------------------------------------------------------------------------
-@K:CKID0001       clk_in              cycloneive_io_ibuf     4142       lpr_delay_d_2_[0]
-=========================================================================================
+=========================== Non-Gated/Non-Generated Clocks ============================
+Clock Tree ID     Driving Element     Drive Element Type     Fanout     Sample Instance
+---------------------------------------------------------------------------------------
+@K:CKID0001       clk_in              cycloneive_io_ibuf     11635      left_raw_reg[0]
+=======================================================================================
 
 
 ##### END OF CLOCK OPTIMIZATION REPORT ######]

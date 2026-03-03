@@ -16,7 +16,7 @@ max stack size: 8388608 (bytes)
 
 Implementation : rev_1
 
-# Written on Mon Mar  2 16:23:37 2026
+# Written on Mon Mar  2 23:28:32 2026
 
 ##### DESIGN INFO #######################################################
 
@@ -40,9 +40,7 @@ Clock Relationships
 
 Starting             Ending               |     rise to rise     |     fall to fall     |     rise to fall     |     fall to rise                     
 -----------------------------------------------------------------------------------------------------------------------------------------------------
-System               fm_radio_top|clk     |     13.009           |     No paths         |     No paths         |     No paths                         
-fm_radio_top|clk     System               |     13.009           |     No paths         |     No paths         |     No paths                         
-fm_radio_top|clk     fm_radio_top|clk     |     13.009           |     No paths         |     No paths         |     No paths                         
+fm_radio_top|clk     fm_radio_top|clk     |     8.836            |     No paths         |     No paths         |     No paths                         
 =====================================================================================================================================================
  Note: 'No paths' indicates there are no paths in the design for that pair of clock edges.
        'Diff grp' indicates that paths exist but the starting clock and ending clock are in different clock groups.

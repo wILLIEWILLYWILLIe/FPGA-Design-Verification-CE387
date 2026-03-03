@@ -1,4 +1,4 @@
-# Mon Mar  2 16:23:36 2026
+# Mon Mar  2 23:28:30 2026
 
 
 Copyright (C) 1994-2018 Synopsys, Inc.
@@ -30,26 +30,26 @@ Printing clock  summary report in "/home/gel8580/CE387/Final_Project/FM_Radio/im
 @N: MF248 |Running in 64-bit mode.
 @N: MF666 |Clock conversion enabled. (Command "set_option -fix_gated_and_generated_clocks 1" in the project file.)
 
-Design Input Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 110MB peak: 112MB)
+Design Input Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 114MB peak: 116MB)
 
 
-Mapper Initialization Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 110MB peak: 112MB)
+Mapper Initialization Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 114MB peak: 116MB)
 
 @W: FA406 |Environment variable QUARTUS_ROOTDIR not set. Cannot determine PAR version.
 @N: MF284 |Setting synthesis effort to medium for the design
 
-Finished Clear Box Flow. (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 127MB peak: 129MB)
+Finished Clear Box Flow. (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 134MB peak: 137MB)
 
 @N: MH105 |UMR3 is only supported for HAPS-80.
 @N: MH105 |UMR3 is only supported for HAPS-80.
-@N: BN362 :"/home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/fir.sv":35:4:35:12|Removing sequential instance x_reg\[30\][31:0] (in view: work.fir_32s_1s_32s_32s_10s_0(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
-@N: BN362 :"/home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/fir.sv":35:4:35:12|Removing sequential instance x_reg\[29\][31:0] (in view: work.fir_32s_1s_32s_32s_10s_0(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
-@N: BN362 :"/home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/fir.sv":35:4:35:12|Removing sequential instance v_reg (in view: work.fir_20s_1s_32s_32s_10s_0(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
-@N: BN362 :"/home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/fir.sv":35:4:35:12|Removing sequential instance v_reg (in view: work.fir_32s_1s_32s_32s_10s_0(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
-@N: BN362 :"/home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/fir.sv":35:4:35:12|Removing sequential instance v_reg (in view: work.fir_32s_8s_32s_32s_10s_0(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@N: BN362 :"/home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/fir.sv":89:4:89:12|Removing sequential instance x_reg\[30\][31:0] (in view: work.fir_32s_1s_32s_32s_10s_32s_5s_0(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN362 :"/home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/fir.sv":89:4:89:12|Removing sequential instance x_reg\[29\][31:0] (in view: work.fir_32s_1s_32s_32s_10s_32s_5s_0(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN362 :"/home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/fir.sv":89:4:89:12|Removing sequential instance v_reg (in view: work.fir_20s_1s_32s_32s_10s_32s_5s_0(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@N: BN362 :"/home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/fir.sv":89:4:89:12|Removing sequential instance v_reg (in view: work.fir_32s_1s_32s_32s_10s_32s_5s_0(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@N: BN362 :"/home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/fir.sv":89:4:89:12|Removing sequential instance v_reg (in view: work.fir_32s_8s_32s_32s_10s_32s_5s_0(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
 @N: BN362 :"/home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/gain.sv":26:4:26:12|Removing sequential instance valid_out (in view: work.gain_0(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
 
-Finished netlist restructuring (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 142MB peak: 145MB)
+Finished netlist restructuring (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 154MB peak: 158MB)
 
 
 
@@ -59,9 +59,7 @@ Clock Summary
           Start                Requested     Requested     Clock        Clock                     Clock
 Level     Clock                Frequency     Period        Type         Group                     Load 
 -------------------------------------------------------------------------------------------------------
-0 -       System               1.0 MHz       1000.000      system       system_clkgroup           0    
-                                                                                                       
-0 -       fm_radio_top|clk     76.9 MHz      13.009        inferred     Autoconstr_clkgroup_0     6961 
+0 -       fm_radio_top|clk     113.2 MHz     8.836         inferred     Autoconstr_clkgroup_0     14389
 =======================================================================================================
 
 
@@ -69,34 +67,32 @@ Level     Clock                Frequency     Period        Type         Group   
 Clock Load Summary
 ***********************
 
-                     Clock     Source        Clock Pin             Non-clock Pin     Non-clock Pin
-Clock                Load      Pin           Seq Example           Seq Example       Comb Example 
---------------------------------------------------------------------------------------------------
-System               0         -             -                     -                 -            
-                                                                                                  
-fm_radio_top|clk     6961      clk(port)     bp_lmr_d1[31:0].C     -                 -            
-==================================================================================================
+                     Clock     Source        Clock Pin                Non-clock Pin     Non-clock Pin
+Clock                Load      Pin           Seq Example              Seq Example       Comb Example 
+-----------------------------------------------------------------------------------------------------
+fm_radio_top|clk     14389     clk(port)     left_raw_reg_valid.C     -                 -            
+=====================================================================================================
 
-@W: MT529 :"/home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/fir.sv":35:4:35:12|Found inferred clock fm_radio_top|clk which controls 6961 sequential elements including u_fir_ch_I.y_reg[26:0]. This clock has no specified timing constraint which may prevent conversion of gated or generated clocks and may adversely impact design performance. 
+@W: MT529 :"/home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/fir.sv":89:4:89:12|Found inferred clock fm_radio_top|clk which controls 14389 sequential elements including u_fir_ch_I.prod_reg\[19\][21:0]. This clock has no specified timing constraint which may prevent conversion of gated or generated clocks and may adversely impact design performance. 
 
 Finished Pre Mapping Phase.
 @N: BN225 |Writing default property annotation file /home/gel8580/CE387/Final_Project/FM_Radio/imp/syn/rev_1/fm_radio.sap.
 
-Starting constraint checker (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:00s; Memory used current: 135MB peak: 145MB)
+Starting constraint checker (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 141MB peak: 158MB)
 
 
-Finished constraint checker preprocessing (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:00s; Memory used current: 142MB peak: 145MB)
+Finished constraint checker preprocessing (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 154MB peak: 158MB)
 
 None
 None
 
-Finished constraint checker (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 143MB peak: 147MB)
+Finished constraint checker (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 156MB peak: 162MB)
 
 Pre-mapping successful!
 
-At Mapper Exit (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 55MB peak: 147MB)
+At Mapper Exit (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 68MB peak: 162MB)
 
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
-# Mon Mar  2 16:23:37 2026
+# Mon Mar  2 23:28:32 2026
 
 ###########################################################]

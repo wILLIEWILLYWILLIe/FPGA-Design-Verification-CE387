@@ -21,11 +21,11 @@ Synopsys Synopsys Netlist Linker, Version comp2018q4p1, Build 004R, Built Nov 27
 @N|Running in 64-bit mode
 File /home/gel8580/CE387/Final_Project/FM_Radio/imp/syn/rev_1/synwork/fm_radio_comp.srs changed - recompiling
 
-At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 76MB peak: 77MB)
+At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 80MB peak: 81MB)
 
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
 
 Process completed successfully.
-# Mon Mar  2 16:23:36 2026
+# Mon Mar  2 23:28:29 2026
 
 ###########################################################]

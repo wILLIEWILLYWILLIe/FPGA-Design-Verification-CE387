@@ -32,10 +32,10 @@
 @N: CG333 :"/vol/synopsys/fpga/O-2018.09-SP1/lib/altera/quartus_prime181/altera_mf.v":54154:12:54154:23|Read directive translate_on.
 @N: CG364 :"/home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/fir_pkg.sv":6:8:6:14|Synthesizing module fir_pkg in library work.
 @N: CG364 :"/home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/qarctan.sv":7:8:7:18|Synthesizing module qarctan_pkg in library work.
-@N: CG364 :"/home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/fir.sv":6:7:6:9|Synthesizing module fir in library work.
-@N: CG364 :"/home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/demodulate.sv":7:7:7:16|Synthesizing module demodulate in library work.
-@N: CG364 :"/home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/fir.sv":6:7:6:9|Synthesizing module fir in library work.
-@N: CG364 :"/home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/fir.sv":6:7:6:9|Synthesizing module fir in library work.
+@N: CG364 :"/home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/fir.sv":11:7:11:9|Synthesizing module fir in library work.
+@N: CG364 :"/home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/demodulate.sv":13:7:13:16|Synthesizing module demodulate in library work.
+@N: CG364 :"/home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/fir.sv":11:7:11:9|Synthesizing module fir in library work.
+@N: CG364 :"/home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/fir.sv":11:7:11:9|Synthesizing module fir in library work.
 @N: CG364 :"/home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/multiply.sv":7:7:7:14|Synthesizing module multiply in library work.
 @N: CG364 :"/home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/add_sub.sv":8:7:8:13|Synthesizing module add_sub in library work.
 @N: CG364 :"/home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/deemphasis.sv":17:7:17:16|Synthesizing module deemphasis in library work.

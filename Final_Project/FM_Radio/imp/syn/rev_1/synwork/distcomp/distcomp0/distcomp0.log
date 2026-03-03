@@ -71,7 +71,9 @@ Synopsys Verilog Compiler, Version comp2018q4p1, Build 004R, Built Nov 27 2018 2
 @I::"/home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/add_sub.sv" (library work)
 @I::"/home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/fm_radio_top.sv" (library work)
 Verilog syntax check successful!
-File /home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/demodulate.sv changed - recompiling
+File /home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/fir_pkg.sv changed - recompiling
+File /home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/fir.sv changed - recompiling
+File /home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/fm_radio_top.sv changed - recompiling
 @N:: Applying property .distcompmodetop with value 1 on module fm_radio_top in library work
 @N:: Applying property .distcompnoprune with value 1 on module fm_radio_top in library work
 @N:: Applying property .noprune with value 1 on module fm_radio_top in library work
@@ -90,50 +92,255 @@ File /home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/demodulate.sv changed - r
 @N: CG364 :"/home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/fir_pkg.sv":6:8:6:14|Synthesizing module fir_pkg in library work.
 @N: CG364 :"/home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/qarctan.sv":7:8:7:18|Synthesizing module qarctan_pkg in library work.
 Selecting top level module fm_radio_top
-@N: CG364 :"/home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/fir.sv":6:7:6:9|Synthesizing module fir in library work.
+@N: CG364 :"/home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/fir.sv":11:7:11:9|Synthesizing module fir in library work.
 
 	TAPS=32'b00000000000000000000000000010100
 	DECIM=32'b00000000000000000000000000000001
 	WIDTH=32'b00000000000000000000000000100000
 	CWIDTH=32'b00000000000000000000000000100000
 	BITS=32'b00000000000000000000000000001010
-   Generated name = fir_20s_1s_32s_32s_10s
-Running optimization stage 1 on fir_20s_1s_32s_32s_10s .......
-@W: CL169 :"/home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/fir.sv":35:4:35:12|Pruning unused register x_reg[19][31:0]. Make sure that there are no unused intermediate registers.
-@W: CL169 :"/home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/fir.sv":35:4:35:12|Pruning unused register acc[63:0]. Make sure that there are no unused intermediate registers.
-@W: CL169 :"/home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/fir.sv":35:4:35:12|Pruning unused register x_val[31:0]. Make sure that there are no unused intermediate registers.
-@W: CL169 :"/home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/fir.sv":35:4:35:12|Pruning unused register prod[31:0]. Make sure that there are no unused intermediate registers.
-@N: CG364 :"/home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/demodulate.sv":7:7:7:16|Synthesizing module demodulate in library work.
-@N: CG179 :"/home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/demodulate.sv":83:54:83:63|Removing redundant assignment.
+	PTAPS=32'b00000000000000000000000000100000
+	LEVELS=32'b00000000000000000000000000000101
+   Generated name = fir_20s_1s_32s_32s_10s_32s_5s
+Running optimization stage 1 on fir_20s_1s_32s_32s_10s_32s_5s .......
+@W: CL169 :"/home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/fir.sv":89:4:89:12|Pruning unused register x_reg[19][31:0]. Make sure that there are no unused intermediate registers.
+@W: CL190 :"/home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/fir.sv":89:4:89:12|Optimizing register bit prod_reg[20][0] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"/home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/fir.sv":89:4:89:12|Optimizing register bit prod_reg[20][1] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"/home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/fir.sv":89:4:89:12|Optimizing register bit prod_reg[20][2] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"/home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/fir.sv":89:4:89:12|Optimizing register bit prod_reg[20][3] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"/home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/fir.sv":89:4:89:12|Optimizing register bit prod_reg[20][4] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"/home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/fir.sv":89:4:89:12|Optimizing register bit prod_reg[20][5] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"/home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/fir.sv":89:4:89:12|Optimizing register bit prod_reg[20][6] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"/home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/fir.sv":89:4:89:12|Optimizing register bit prod_reg[20][7] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"/home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/fir.sv":89:4:89:12|Optimizing register bit prod_reg[20][8] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"/home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/fir.sv":89:4:89:12|Optimizing register bit prod_reg[20][9] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"/home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/fir.sv":89:4:89:12|Optimizing register bit prod_reg[20][10] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"/home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/fir.sv":89:4:89:12|Optimizing register bit prod_reg[20][11] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"/home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/fir.sv":89:4:89:12|Optimizing register bit prod_reg[20][12] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"/home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/fir.sv":89:4:89:12|Optimizing register bit prod_reg[20][13] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"/home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/fir.sv":89:4:89:12|Optimizing register bit prod_reg[20][14] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"/home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/fir.sv":89:4:89:12|Optimizing register bit prod_reg[20][15] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"/home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/fir.sv":89:4:89:12|Optimizing register bit prod_reg[20][16] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"/home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/fir.sv":89:4:89:12|Optimizing register bit prod_reg[20][17] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"/home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/fir.sv":89:4:89:12|Optimizing register bit prod_reg[20][18] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"/home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/fir.sv":89:4:89:12|Optimizing register bit prod_reg[20][19] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"/home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/fir.sv":89:4:89:12|Optimizing register bit prod_reg[20][20] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"/home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/fir.sv":89:4:89:12|Optimizing register bit prod_reg[20][21] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"/home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/fir.sv":89:4:89:12|Optimizing register bit prod_reg[20][22] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"/home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/fir.sv":89:4:89:12|Optimizing register bit prod_reg[20][23] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"/home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/fir.sv":89:4:89:12|Optimizing register bit prod_reg[20][24] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"/home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/fir.sv":89:4:89:12|Optimizing register bit prod_reg[20][25] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"/home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/fir.sv":89:4:89:12|Optimizing register bit prod_reg[20][26] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"/home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/fir.sv":89:4:89:12|Optimizing register bit prod_reg[20][27] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"/home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/fir.sv":89:4:89:12|Optimizing register bit prod_reg[20][28] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"/home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/fir.sv":89:4:89:12|Optimizing register bit prod_reg[20][29] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"/home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/fir.sv":89:4:89:12|Optimizing register bit prod_reg[20][30] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"/home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/fir.sv":89:4:89:12|Optimizing register bit prod_reg[20][31] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"/home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/fir.sv":89:4:89:12|Optimizing register bit prod_reg[21][0] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"/home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/fir.sv":89:4:89:12|Optimizing register bit prod_reg[21][1] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"/home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/fir.sv":89:4:89:12|Optimizing register bit prod_reg[21][2] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"/home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/fir.sv":89:4:89:12|Optimizing register bit prod_reg[21][3] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"/home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/fir.sv":89:4:89:12|Optimizing register bit prod_reg[21][4] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"/home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/fir.sv":89:4:89:12|Optimizing register bit prod_reg[21][5] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"/home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/fir.sv":89:4:89:12|Optimizing register bit prod_reg[21][6] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"/home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/fir.sv":89:4:89:12|Optimizing register bit prod_reg[21][7] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"/home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/fir.sv":89:4:89:12|Optimizing register bit prod_reg[21][8] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"/home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/fir.sv":89:4:89:12|Optimizing register bit prod_reg[21][9] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"/home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/fir.sv":89:4:89:12|Optimizing register bit prod_reg[21][10] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"/home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/fir.sv":89:4:89:12|Optimizing register bit prod_reg[21][11] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"/home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/fir.sv":89:4:89:12|Optimizing register bit prod_reg[21][12] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"/home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/fir.sv":89:4:89:12|Optimizing register bit prod_reg[21][13] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"/home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/fir.sv":89:4:89:12|Optimizing register bit prod_reg[21][14] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"/home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/fir.sv":89:4:89:12|Optimizing register bit prod_reg[21][15] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"/home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/fir.sv":89:4:89:12|Optimizing register bit prod_reg[21][16] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"/home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/fir.sv":89:4:89:12|Optimizing register bit prod_reg[21][17] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"/home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/fir.sv":89:4:89:12|Optimizing register bit prod_reg[21][18] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"/home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/fir.sv":89:4:89:12|Optimizing register bit prod_reg[21][19] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"/home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/fir.sv":89:4:89:12|Optimizing register bit prod_reg[21][20] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"/home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/fir.sv":89:4:89:12|Optimizing register bit prod_reg[21][21] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"/home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/fir.sv":89:4:89:12|Optimizing register bit prod_reg[21][22] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"/home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/fir.sv":89:4:89:12|Optimizing register bit prod_reg[21][23] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"/home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/fir.sv":89:4:89:12|Optimizing register bit prod_reg[21][24] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"/home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/fir.sv":89:4:89:12|Optimizing register bit prod_reg[21][25] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"/home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/fir.sv":89:4:89:12|Optimizing register bit prod_reg[21][26] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"/home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/fir.sv":89:4:89:12|Optimizing register bit prod_reg[21][27] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"/home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/fir.sv":89:4:89:12|Optimizing register bit prod_reg[21][28] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"/home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/fir.sv":89:4:89:12|Optimizing register bit prod_reg[21][29] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"/home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/fir.sv":89:4:89:12|Optimizing register bit prod_reg[21][30] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"/home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/fir.sv":89:4:89:12|Optimizing register bit prod_reg[21][31] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"/home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/fir.sv":89:4:89:12|Optimizing register bit prod_reg[22][0] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"/home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/fir.sv":89:4:89:12|Optimizing register bit prod_reg[22][1] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"/home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/fir.sv":89:4:89:12|Optimizing register bit prod_reg[22][2] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"/home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/fir.sv":89:4:89:12|Optimizing register bit prod_reg[22][3] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"/home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/fir.sv":89:4:89:12|Optimizing register bit prod_reg[22][4] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"/home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/fir.sv":89:4:89:12|Optimizing register bit prod_reg[22][5] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"/home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/fir.sv":89:4:89:12|Optimizing register bit prod_reg[22][6] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"/home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/fir.sv":89:4:89:12|Optimizing register bit prod_reg[22][7] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"/home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/fir.sv":89:4:89:12|Optimizing register bit prod_reg[22][8] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"/home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/fir.sv":89:4:89:12|Optimizing register bit prod_reg[22][9] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"/home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/fir.sv":89:4:89:12|Optimizing register bit prod_reg[22][10] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"/home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/fir.sv":89:4:89:12|Optimizing register bit prod_reg[22][11] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"/home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/fir.sv":89:4:89:12|Optimizing register bit prod_reg[22][12] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"/home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/fir.sv":89:4:89:12|Optimizing register bit prod_reg[22][13] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"/home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/fir.sv":89:4:89:12|Optimizing register bit prod_reg[22][14] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"/home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/fir.sv":89:4:89:12|Optimizing register bit prod_reg[22][15] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"/home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/fir.sv":89:4:89:12|Optimizing register bit prod_reg[22][16] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"/home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/fir.sv":89:4:89:12|Optimizing register bit prod_reg[22][17] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"/home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/fir.sv":89:4:89:12|Optimizing register bit prod_reg[22][18] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"/home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/fir.sv":89:4:89:12|Optimizing register bit prod_reg[22][19] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"/home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/fir.sv":89:4:89:12|Optimizing register bit prod_reg[22][20] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"/home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/fir.sv":89:4:89:12|Optimizing register bit prod_reg[22][21] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"/home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/fir.sv":89:4:89:12|Optimizing register bit prod_reg[22][22] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"/home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/fir.sv":89:4:89:12|Optimizing register bit prod_reg[22][23] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"/home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/fir.sv":89:4:89:12|Optimizing register bit prod_reg[22][24] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"/home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/fir.sv":89:4:89:12|Optimizing register bit prod_reg[22][25] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"/home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/fir.sv":89:4:89:12|Optimizing register bit prod_reg[22][26] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"/home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/fir.sv":89:4:89:12|Optimizing register bit prod_reg[22][27] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"/home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/fir.sv":89:4:89:12|Optimizing register bit prod_reg[22][28] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"/home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/fir.sv":89:4:89:12|Optimizing register bit prod_reg[22][29] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"/home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/fir.sv":89:4:89:12|Optimizing register bit prod_reg[22][30] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"/home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/fir.sv":89:4:89:12|Optimizing register bit prod_reg[22][31] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"/home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/fir.sv":89:4:89:12|Optimizing register bit prod_reg[23][0] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"/home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/fir.sv":89:4:89:12|Optimizing register bit prod_reg[23][1] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"/home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/fir.sv":89:4:89:12|Optimizing register bit prod_reg[23][2] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"/home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/fir.sv":89:4:89:12|Optimizing register bit prod_reg[23][3] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+
+Only the first 100 messages of id 'CL190' are reported. To see all messages use 'report_messages -log /home/gel8580/CE387/Final_Project/FM_Radio/imp/syn/rev_1/synwork//distcomp/distcomp0/distcomp0.log -id CL190' in the Tcl shell. To see all messages in future runs, use the command 'message_override -limit {CL190} -count unlimited' in the Tcl shell.
+@W: CL169 :"/home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/fir.sv":89:4:89:12|Pruning unused register prod_reg[20][31:0]. Make sure that there are no unused intermediate registers.
+@W: CL169 :"/home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/fir.sv":89:4:89:12|Pruning unused register prod_reg[21][31:0]. Make sure that there are no unused intermediate registers.
+@W: CL169 :"/home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/fir.sv":89:4:89:12|Pruning unused register prod_reg[22][31:0]. Make sure that there are no unused intermediate registers.
+@W: CL169 :"/home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/fir.sv":89:4:89:12|Pruning unused register prod_reg[23][31:0]. Make sure that there are no unused intermediate registers.
+@W: CL169 :"/home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/fir.sv":89:4:89:12|Pruning unused register prod_reg[24][31:0]. Make sure that there are no unused intermediate registers.
+@W: CL169 :"/home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/fir.sv":89:4:89:12|Pruning unused register prod_reg[25][31:0]. Make sure that there are no unused intermediate registers.
+@W: CL169 :"/home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/fir.sv":89:4:89:12|Pruning unused register prod_reg[26][31:0]. Make sure that there are no unused intermediate registers.
+@W: CL169 :"/home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/fir.sv":89:4:89:12|Pruning unused register prod_reg[27][31:0]. Make sure that there are no unused intermediate registers.
+@W: CL169 :"/home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/fir.sv":89:4:89:12|Pruning unused register prod_reg[28][31:0]. Make sure that there are no unused intermediate registers.
+@W: CL169 :"/home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/fir.sv":89:4:89:12|Pruning unused register prod_reg[29][31:0]. Make sure that there are no unused intermediate registers.
+@W: CL169 :"/home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/fir.sv":89:4:89:12|Pruning unused register prod_reg[30][31:0]. Make sure that there are no unused intermediate registers.
+@W: CL169 :"/home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/fir.sv":89:4:89:12|Pruning unused register prod_reg[31][31:0]. Make sure that there are no unused intermediate registers.
+@N: CG364 :"/home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/demodulate.sv":13:7:13:16|Synthesizing module demodulate in library work.
 Running optimization stage 1 on demodulate .......
-@W: CL271 :"/home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/demodulate.sv":92:4:92:12|Pruning unused bits 30 to 0 of stg2_x_reg[31:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
-@W: CL271 :"/home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/demodulate.sv":92:4:92:12|Pruning unused bits 30 to 0 of stg2_y_reg[31:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
-@N: CG364 :"/home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/fir.sv":6:7:6:9|Synthesizing module fir in library work.
+@W: CL169 :"/home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/demodulate.sv":113:12:113:20|Pruning unused register div_pipe[31].p_rem[32][32:0]. Make sure that there are no unused intermediate registers.
+@W: CL169 :"/home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/demodulate.sv":113:12:113:20|Pruning unused register div_pipe[31].p_num[32][31:0]. Make sure that there are no unused intermediate registers.
+@W: CL169 :"/home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/demodulate.sv":113:12:113:20|Pruning unused register div_pipe[31].p_den[32][31:0]. Make sure that there are no unused intermediate registers.
+@W: CL265 :"/home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/demodulate.sv":113:12:113:20|Removing unused bit 32 of div_pipe[30].p_rem[31][32:0]. Either assign all bits or reduce the width of the signal.
+@W: CL265 :"/home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/demodulate.sv":113:12:113:20|Removing unused bit 31 of div_pipe[30].p_quo[31][31:0]. Either assign all bits or reduce the width of the signal.
+@W: CL271 :"/home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/demodulate.sv":113:12:113:20|Pruning unused bits 30 to 0 of div_pipe[30].p_num[31][31:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@W: CL265 :"/home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/demodulate.sv":113:12:113:20|Removing unused bit 32 of div_pipe[29].p_rem[30][32:0]. Either assign all bits or reduce the width of the signal.
+@W: CL271 :"/home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/demodulate.sv":113:12:113:20|Pruning unused bits 31 to 30 of div_pipe[29].p_quo[30][31:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@W: CL271 :"/home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/demodulate.sv":113:12:113:20|Pruning unused bits 29 to 0 of div_pipe[29].p_num[30][31:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@W: CL265 :"/home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/demodulate.sv":113:12:113:20|Removing unused bit 32 of div_pipe[28].p_rem[29][32:0]. Either assign all bits or reduce the width of the signal.
+@W: CL271 :"/home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/demodulate.sv":113:12:113:20|Pruning unused bits 31 to 29 of div_pipe[28].p_quo[29][31:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@W: CL271 :"/home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/demodulate.sv":113:12:113:20|Pruning unused bits 28 to 0 of div_pipe[28].p_num[29][31:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@W: CL265 :"/home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/demodulate.sv":113:12:113:20|Removing unused bit 32 of div_pipe[27].p_rem[28][32:0]. Either assign all bits or reduce the width of the signal.
+@W: CL271 :"/home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/demodulate.sv":113:12:113:20|Pruning unused bits 31 to 28 of div_pipe[27].p_quo[28][31:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@W: CL271 :"/home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/demodulate.sv":113:12:113:20|Pruning unused bits 27 to 0 of div_pipe[27].p_num[28][31:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@W: CL265 :"/home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/demodulate.sv":113:12:113:20|Removing unused bit 32 of div_pipe[26].p_rem[27][32:0]. Either assign all bits or reduce the width of the signal.
+@W: CL271 :"/home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/demodulate.sv":113:12:113:20|Pruning unused bits 31 to 27 of div_pipe[26].p_quo[27][31:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@W: CL271 :"/home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/demodulate.sv":113:12:113:20|Pruning unused bits 26 to 0 of div_pipe[26].p_num[27][31:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@W: CL265 :"/home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/demodulate.sv":113:12:113:20|Removing unused bit 32 of div_pipe[25].p_rem[26][32:0]. Either assign all bits or reduce the width of the signal.
+@W: CL271 :"/home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/demodulate.sv":113:12:113:20|Pruning unused bits 31 to 26 of div_pipe[25].p_quo[26][31:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@W: CL271 :"/home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/demodulate.sv":113:12:113:20|Pruning unused bits 25 to 0 of div_pipe[25].p_num[26][31:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@W: CL265 :"/home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/demodulate.sv":113:12:113:20|Removing unused bit 32 of div_pipe[24].p_rem[25][32:0]. Either assign all bits or reduce the width of the signal.
+@W: CL271 :"/home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/demodulate.sv":113:12:113:20|Pruning unused bits 31 to 25 of div_pipe[24].p_quo[25][31:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@W: CL271 :"/home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/demodulate.sv":113:12:113:20|Pruning unused bits 24 to 0 of div_pipe[24].p_num[25][31:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@W: CL265 :"/home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/demodulate.sv":113:12:113:20|Removing unused bit 32 of div_pipe[23].p_rem[24][32:0]. Either assign all bits or reduce the width of the signal.
+@W: CL271 :"/home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/demodulate.sv":113:12:113:20|Pruning unused bits 31 to 24 of div_pipe[23].p_quo[24][31:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@W: CL271 :"/home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/demodulate.sv":113:12:113:20|Pruning unused bits 23 to 0 of div_pipe[23].p_num[24][31:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@W: CL265 :"/home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/demodulate.sv":113:12:113:20|Removing unused bit 32 of div_pipe[22].p_rem[23][32:0]. Either assign all bits or reduce the width of the signal.
+@W: CL271 :"/home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/demodulate.sv":113:12:113:20|Pruning unused bits 31 to 23 of div_pipe[22].p_quo[23][31:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@W: CL271 :"/home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/demodulate.sv":113:12:113:20|Pruning unused bits 22 to 0 of div_pipe[22].p_num[23][31:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@W: CL265 :"/home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/demodulate.sv":113:12:113:20|Removing unused bit 32 of div_pipe[21].p_rem[22][32:0]. Either assign all bits or reduce the width of the signal.
+@W: CL271 :"/home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/demodulate.sv":113:12:113:20|Pruning unused bits 31 to 22 of div_pipe[21].p_quo[22][31:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@W: CL271 :"/home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/demodulate.sv":113:12:113:20|Pruning unused bits 21 to 0 of div_pipe[21].p_num[22][31:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@W: CL265 :"/home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/demodulate.sv":113:12:113:20|Removing unused bit 32 of div_pipe[20].p_rem[21][32:0]. Either assign all bits or reduce the width of the signal.
+@W: CL271 :"/home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/demodulate.sv":113:12:113:20|Pruning unused bits 31 to 21 of div_pipe[20].p_quo[21][31:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@W: CL271 :"/home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/demodulate.sv":113:12:113:20|Pruning unused bits 20 to 0 of div_pipe[20].p_num[21][31:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@W: CL265 :"/home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/demodulate.sv":113:12:113:20|Removing unused bit 32 of div_pipe[19].p_rem[20][32:0]. Either assign all bits or reduce the width of the signal.
+@W: CL271 :"/home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/demodulate.sv":113:12:113:20|Pruning unused bits 31 to 20 of div_pipe[19].p_quo[20][31:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@W: CL271 :"/home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/demodulate.sv":113:12:113:20|Pruning unused bits 19 to 0 of div_pipe[19].p_num[20][31:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@W: CL265 :"/home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/demodulate.sv":113:12:113:20|Removing unused bit 32 of div_pipe[18].p_rem[19][32:0]. Either assign all bits or reduce the width of the signal.
+@W: CL271 :"/home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/demodulate.sv":113:12:113:20|Pruning unused bits 31 to 19 of div_pipe[18].p_quo[19][31:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@W: CL271 :"/home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/demodulate.sv":113:12:113:20|Pruning unused bits 18 to 0 of div_pipe[18].p_num[19][31:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@W: CL265 :"/home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/demodulate.sv":113:12:113:20|Removing unused bit 32 of div_pipe[17].p_rem[18][32:0]. Either assign all bits or reduce the width of the signal.
+@W: CL271 :"/home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/demodulate.sv":113:12:113:20|Pruning unused bits 31 to 18 of div_pipe[17].p_quo[18][31:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@W: CL271 :"/home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/demodulate.sv":113:12:113:20|Pruning unused bits 17 to 0 of div_pipe[17].p_num[18][31:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@W: CL265 :"/home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/demodulate.sv":113:12:113:20|Removing unused bit 32 of div_pipe[16].p_rem[17][32:0]. Either assign all bits or reduce the width of the signal.
+@W: CL271 :"/home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/demodulate.sv":113:12:113:20|Pruning unused bits 31 to 17 of div_pipe[16].p_quo[17][31:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@W: CL271 :"/home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/demodulate.sv":113:12:113:20|Pruning unused bits 16 to 0 of div_pipe[16].p_num[17][31:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@W: CL265 :"/home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/demodulate.sv":113:12:113:20|Removing unused bit 32 of div_pipe[15].p_rem[16][32:0]. Either assign all bits or reduce the width of the signal.
+@W: CL271 :"/home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/demodulate.sv":113:12:113:20|Pruning unused bits 31 to 16 of div_pipe[15].p_quo[16][31:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@W: CL271 :"/home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/demodulate.sv":113:12:113:20|Pruning unused bits 15 to 0 of div_pipe[15].p_num[16][31:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@W: CL265 :"/home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/demodulate.sv":113:12:113:20|Removing unused bit 32 of div_pipe[14].p_rem[15][32:0]. Either assign all bits or reduce the width of the signal.
+@W: CL271 :"/home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/demodulate.sv":113:12:113:20|Pruning unused bits 31 to 15 of div_pipe[14].p_quo[15][31:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@W: CL271 :"/home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/demodulate.sv":113:12:113:20|Pruning unused bits 14 to 0 of div_pipe[14].p_num[15][31:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@W: CL265 :"/home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/demodulate.sv":113:12:113:20|Removing unused bit 32 of div_pipe[13].p_rem[14][32:0]. Either assign all bits or reduce the width of the signal.
+@W: CL271 :"/home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/demodulate.sv":113:12:113:20|Pruning unused bits 31 to 14 of div_pipe[13].p_quo[14][31:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@W: CL271 :"/home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/demodulate.sv":113:12:113:20|Pruning unused bits 13 to 0 of div_pipe[13].p_num[14][31:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@W: CL265 :"/home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/demodulate.sv":113:12:113:20|Removing unused bit 32 of div_pipe[12].p_rem[13][32:0]. Either assign all bits or reduce the width of the signal.
+@W: CL271 :"/home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/demodulate.sv":113:12:113:20|Pruning unused bits 31 to 13 of div_pipe[12].p_quo[13][31:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@W: CL271 :"/home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/demodulate.sv":113:12:113:20|Pruning unused bits 12 to 0 of div_pipe[12].p_num[13][31:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@W: CL265 :"/home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/demodulate.sv":113:12:113:20|Removing unused bit 32 of div_pipe[11].p_rem[12][32:0]. Either assign all bits or reduce the width of the signal.
+@W: CL271 :"/home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/demodulate.sv":113:12:113:20|Pruning unused bits 31 to 12 of div_pipe[11].p_quo[12][31:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@W: CL271 :"/home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/demodulate.sv":113:12:113:20|Pruning unused bits 11 to 0 of div_pipe[11].p_num[12][31:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@W: CL265 :"/home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/demodulate.sv":113:12:113:20|Removing unused bit 32 of div_pipe[10].p_rem[11][32:0]. Either assign all bits or reduce the width of the signal.
+@W: CL271 :"/home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/demodulate.sv":113:12:113:20|Pruning unused bits 31 to 11 of div_pipe[10].p_quo[11][31:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@W: CL271 :"/home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/demodulate.sv":113:12:113:20|Pruning unused bits 10 to 0 of div_pipe[10].p_num[11][31:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@W: CL265 :"/home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/demodulate.sv":113:12:113:20|Removing unused bit 32 of div_pipe[9].p_rem[10][32:0]. Either assign all bits or reduce the width of the signal.
+@W: CL271 :"/home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/demodulate.sv":113:12:113:20|Pruning unused bits 31 to 10 of div_pipe[9].p_quo[10][31:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@W: CL271 :"/home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/demodulate.sv":113:12:113:20|Pruning unused bits 9 to 0 of div_pipe[9].p_num[10][31:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@W: CL265 :"/home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/demodulate.sv":113:12:113:20|Removing unused bit 32 of div_pipe[8].p_rem[9][32:0]. Either assign all bits or reduce the width of the signal.
+@W: CL271 :"/home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/demodulate.sv":113:12:113:20|Pruning unused bits 31 to 9 of div_pipe[8].p_quo[9][31:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@W: CL271 :"/home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/demodulate.sv":113:12:113:20|Pruning unused bits 8 to 0 of div_pipe[8].p_num[9][31:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@W: CL265 :"/home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/demodulate.sv":113:12:113:20|Removing unused bit 32 of div_pipe[7].p_rem[8][32:0]. Either assign all bits or reduce the width of the signal.
+@W: CL271 :"/home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/demodulate.sv":113:12:113:20|Pruning unused bits 31 to 8 of div_pipe[7].p_quo[8][31:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@W: CL271 :"/home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/demodulate.sv":113:12:113:20|Pruning unused bits 7 to 0 of div_pipe[7].p_num[8][31:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@W: CL265 :"/home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/demodulate.sv":113:12:113:20|Removing unused bit 32 of div_pipe[6].p_rem[7][32:0]. Either assign all bits or reduce the width of the signal.
+@W: CL271 :"/home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/demodulate.sv":113:12:113:20|Pruning unused bits 31 to 7 of div_pipe[6].p_quo[7][31:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@W: CL271 :"/home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/demodulate.sv":113:12:113:20|Pruning unused bits 6 to 0 of div_pipe[6].p_num[7][31:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@W: CL265 :"/home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/demodulate.sv":113:12:113:20|Removing unused bit 32 of div_pipe[5].p_rem[6][32:0]. Either assign all bits or reduce the width of the signal.
+@W: CL271 :"/home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/demodulate.sv":113:12:113:20|Pruning unused bits 31 to 6 of div_pipe[5].p_quo[6][31:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@W: CL271 :"/home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/demodulate.sv":113:12:113:20|Pruning unused bits 5 to 0 of div_pipe[5].p_num[6][31:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@W: CL265 :"/home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/demodulate.sv":113:12:113:20|Removing unused bit 32 of div_pipe[4].p_rem[5][32:0]. Either assign all bits or reduce the width of the signal.
+@W: CL271 :"/home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/demodulate.sv":113:12:113:20|Pruning unused bits 31 to 5 of div_pipe[4].p_quo[5][31:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@W: CL271 :"/home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/demodulate.sv":113:12:113:20|Pruning unused bits 4 to 0 of div_pipe[4].p_num[5][31:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@W: CL265 :"/home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/demodulate.sv":113:12:113:20|Removing unused bit 32 of div_pipe[3].p_rem[4][32:0]. Either assign all bits or reduce the width of the signal.
+@W: CL271 :"/home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/demodulate.sv":113:12:113:20|Pruning unused bits 31 to 4 of div_pipe[3].p_quo[4][31:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@W: CL271 :"/home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/demodulate.sv":113:12:113:20|Pruning unused bits 3 to 0 of div_pipe[3].p_num[4][31:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@W: CL265 :"/home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/demodulate.sv":113:12:113:20|Removing unused bit 32 of div_pipe[2].p_rem[3][32:0]. Either assign all bits or reduce the width of the signal.
+@W: CL271 :"/home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/demodulate.sv":113:12:113:20|Pruning unused bits 31 to 3 of div_pipe[2].p_quo[3][31:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@W: CL271 :"/home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/demodulate.sv":113:12:113:20|Pruning unused bits 2 to 0 of div_pipe[2].p_num[3][31:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@W: CL265 :"/home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/demodulate.sv":113:12:113:20|Removing unused bit 32 of div_pipe[1].p_rem[2][32:0]. Either assign all bits or reduce the width of the signal.
+@W: CL271 :"/home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/demodulate.sv":113:12:113:20|Pruning unused bits 31 to 2 of div_pipe[1].p_quo[2][31:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@W: CL271 :"/home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/demodulate.sv":113:12:113:20|Pruning unused bits 1 to 0 of div_pipe[1].p_num[2][31:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@W: CL265 :"/home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/demodulate.sv":113:12:113:20|Removing unused bit 32 of div_pipe[0].p_rem[1][32:0]. Either assign all bits or reduce the width of the signal.
+@W: CL271 :"/home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/demodulate.sv":113:12:113:20|Pruning unused bits 31 to 1 of div_pipe[0].p_quo[1][31:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@W: CL265 :"/home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/demodulate.sv":113:12:113:20|Removing unused bit 0 of div_pipe[0].p_num[1][31:0]. Either assign all bits or reduce the width of the signal.
+@W: CL279 :"/home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/demodulate.sv":216:4:216:12|Pruning register bits 9 to 0 of stg2a_numer[31:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@N: CG364 :"/home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/fir.sv":11:7:11:9|Synthesizing module fir in library work.
 
 	TAPS=32'b00000000000000000000000000100000
 	DECIM=32'b00000000000000000000000000001000
 	WIDTH=32'b00000000000000000000000000100000
 	CWIDTH=32'b00000000000000000000000000100000
 	BITS=32'b00000000000000000000000000001010
-   Generated name = fir_32s_8s_32s_32s_10s
-Running optimization stage 1 on fir_32s_8s_32s_32s_10s .......
-@W: CL169 :"/home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/fir.sv":35:4:35:12|Pruning unused register x_reg[31][31:0]. Make sure that there are no unused intermediate registers.
-@W: CL169 :"/home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/fir.sv":35:4:35:12|Pruning unused register acc[63:0]. Make sure that there are no unused intermediate registers.
-@W: CL169 :"/home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/fir.sv":35:4:35:12|Pruning unused register x_val[31:0]. Make sure that there are no unused intermediate registers.
-@W: CL169 :"/home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/fir.sv":35:4:35:12|Pruning unused register prod[31:0]. Make sure that there are no unused intermediate registers.
-@N: CG364 :"/home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/fir.sv":6:7:6:9|Synthesizing module fir in library work.
+	PTAPS=32'b00000000000000000000000000100000
+	LEVELS=32'b00000000000000000000000000000101
+   Generated name = fir_32s_8s_32s_32s_10s_32s_5s
+Running optimization stage 1 on fir_32s_8s_32s_32s_10s_32s_5s .......
+@W: CL169 :"/home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/fir.sv":89:4:89:12|Pruning unused register x_reg[31][31:0]. Make sure that there are no unused intermediate registers.
+@N: CG364 :"/home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/fir.sv":11:7:11:9|Synthesizing module fir in library work.
 
 	TAPS=32'b00000000000000000000000000100000
 	DECIM=32'b00000000000000000000000000000001
 	WIDTH=32'b00000000000000000000000000100000
 	CWIDTH=32'b00000000000000000000000000100000
 	BITS=32'b00000000000000000000000000001010
-   Generated name = fir_32s_1s_32s_32s_10s
-Running optimization stage 1 on fir_32s_1s_32s_32s_10s .......
-@W: CL169 :"/home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/fir.sv":35:4:35:12|Pruning unused register x_reg[31][31:0]. Make sure that there are no unused intermediate registers.
-@W: CL169 :"/home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/fir.sv":35:4:35:12|Pruning unused register acc[63:0]. Make sure that there are no unused intermediate registers.
-@W: CL169 :"/home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/fir.sv":35:4:35:12|Pruning unused register x_val[31:0]. Make sure that there are no unused intermediate registers.
-@W: CL169 :"/home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/fir.sv":35:4:35:12|Pruning unused register prod[31:0]. Make sure that there are no unused intermediate registers.
+	PTAPS=32'b00000000000000000000000000100000
+	LEVELS=32'b00000000000000000000000000000101
+   Generated name = fir_32s_1s_32s_32s_10s_32s_5s
+Running optimization stage 1 on fir_32s_1s_32s_32s_10s_32s_5s .......
+@W: CL169 :"/home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/fir.sv":89:4:89:12|Pruning unused register x_reg[31][31:0]. Make sure that there are no unused intermediate registers.
 @N: CG364 :"/home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/multiply.sv":7:7:7:14|Synthesizing module multiply in library work.
 Running optimization stage 1 on multiply .......
 @N: CG364 :"/home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/add_sub.sv":8:7:8:13|Synthesizing module add_sub in library work.
@@ -146,33 +353,141 @@ Running optimization stage 1 on gain .......
 Running optimization stage 1 on fm_radio_top .......
 @W: CL169 :"/home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/fm_radio_top.sv":120:4:120:12|Pruning unused register bplmr_v_d1. Make sure that there are no unused intermediate registers.
 @W: CL169 :"/home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/fm_radio_top.sv":120:4:120:12|Pruning unused register bplmr_v_d2. Make sure that there are no unused intermediate registers.
+@W: CL169 :"/home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/fm_radio_top.sv":120:4:120:12|Pruning unused register bplmr_v_d3. Make sure that there are no unused intermediate registers.
 Running optimization stage 2 on fm_radio_top .......
-@N: CL135 :"/home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/fm_radio_top.sv":162:4:162:12|Found sequential shift lpr_delay_v with address depth of 4 words and data bit width of 1.
-@N: CL135 :"/home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/fm_radio_top.sv":162:4:162:12|Found sequential shift lpr_delay_d with address depth of 4 words and data bit width of 32.
+@N: CL135 :"/home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/fm_radio_top.sv":120:4:120:12|Found sequential shift bp_lmr_d3 with address depth of 3 words and data bit width of 32.
+@N: CL135 :"/home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/fm_radio_top.sv":164:4:164:12|Found sequential shift lpr_delay_v with address depth of 6 words and data bit width of 1.
+@N: CL135 :"/home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/fm_radio_top.sv":164:4:164:12|Found sequential shift lpr_delay_d with address depth of 6 words and data bit width of 32.
 Running optimization stage 2 on gain .......
-@W: CL190 :"/home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/gain.sv":26:4:26:12|Optimizing register bit y_out[0] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: CL190 :"/home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/gain.sv":26:4:26:12|Optimizing register bit y_out[1] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: CL190 :"/home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/gain.sv":26:4:26:12|Optimizing register bit y_out[2] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: CL190 :"/home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/gain.sv":26:4:26:12|Optimizing register bit y_out[3] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
 @W: CL279 :"/home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/gain.sv":26:4:26:12|Pruning register bits 3 to 0 of y_out[31:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
 @W: CL279 :"/home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/gain.sv":26:4:26:12|Pruning register bits 31 to 26 of y_out[31:4]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
 Running optimization stage 2 on deemphasis .......
-@W: CL260 :"/home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/deemphasis.sv":54:4:54:12|Pruning register bit 31 of x0_reg[31:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.
+@W: CL260 :"/home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/deemphasis.sv":65:4:65:12|Pruning register bit 0 of prod1_reg[31:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.
+@W: CL260 :"/home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/deemphasis.sv":65:4:65:12|Pruning register bit 0 of prod0_reg[31:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.
+@W: CL260 :"/home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/deemphasis.sv":65:4:65:12|Pruning register bit 31 of x0_reg[31:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.
+@W: CL279 :"/home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/deemphasis.sv":65:4:65:12|Pruning register bits 31 to 23 of c_y1_reg[31:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@W: CL279 :"/home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/deemphasis.sv":65:4:65:12|Pruning register bits 31 to 24 of y0_reg[31:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@W: CL279 :"/home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/deemphasis.sv":65:4:65:12|Pruning register bits 31 to 24 of y_out[31:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
 @W: CL247 :"/home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/deemphasis.sv":21:44:21:47|Input port bit 31 of x_in[31:0] is unused
 
 Running optimization stage 2 on add_sub .......
 Running optimization stage 2 on multiply .......
 @W: CL279 :"/home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/multiply.sv":26:4:26:12|Pruning register bits 31 to 22 of out[31:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
-Running optimization stage 2 on fir_32s_1s_32s_32s_10s .......
-@W: CL279 :"/home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/fir.sv":35:4:35:12|Pruning register bits 31 to 28 of y_reg[31:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
-Running optimization stage 2 on fir_32s_8s_32s_32s_10s .......
-@W: CL279 :"/home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/fir.sv":35:4:35:12|Pruning register bits 31 to 28 of y_reg[31:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+Running optimization stage 2 on fir_32s_1s_32s_32s_10s_32s_5s .......
+@W: CL279 :"/home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/fir.sv":89:4:89:12|Pruning register bits 31 to 22 of prod_reg[0][31:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@W: CL279 :"/home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/fir.sv":89:4:89:12|Pruning register bits 31 to 22 of prod_reg[1][31:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@W: CL279 :"/home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/fir.sv":89:4:89:12|Pruning register bits 31 to 22 of prod_reg[2][31:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@W: CL279 :"/home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/fir.sv":89:4:89:12|Pruning register bits 31 to 22 of prod_reg[3][31:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@W: CL279 :"/home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/fir.sv":89:4:89:12|Pruning register bits 31 to 22 of prod_reg[4][31:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@W: CL279 :"/home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/fir.sv":89:4:89:12|Pruning register bits 31 to 22 of prod_reg[5][31:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@W: CL279 :"/home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/fir.sv":89:4:89:12|Pruning register bits 31 to 22 of prod_reg[6][31:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@W: CL279 :"/home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/fir.sv":89:4:89:12|Pruning register bits 31 to 22 of prod_reg[7][31:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@W: CL279 :"/home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/fir.sv":89:4:89:12|Pruning register bits 31 to 22 of prod_reg[8][31:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@W: CL279 :"/home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/fir.sv":89:4:89:12|Pruning register bits 31 to 22 of prod_reg[9][31:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@W: CL279 :"/home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/fir.sv":89:4:89:12|Pruning register bits 31 to 22 of prod_reg[10][31:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@W: CL279 :"/home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/fir.sv":89:4:89:12|Pruning register bits 31 to 22 of prod_reg[11][31:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@W: CL279 :"/home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/fir.sv":89:4:89:12|Pruning register bits 31 to 22 of prod_reg[12][31:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@W: CL279 :"/home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/fir.sv":89:4:89:12|Pruning register bits 31 to 22 of prod_reg[13][31:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@W: CL279 :"/home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/fir.sv":89:4:89:12|Pruning register bits 31 to 22 of prod_reg[14][31:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@W: CL279 :"/home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/fir.sv":89:4:89:12|Pruning register bits 31 to 22 of prod_reg[15][31:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@W: CL279 :"/home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/fir.sv":89:4:89:12|Pruning register bits 31 to 22 of prod_reg[16][31:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@W: CL279 :"/home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/fir.sv":89:4:89:12|Pruning register bits 31 to 22 of prod_reg[17][31:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@W: CL279 :"/home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/fir.sv":89:4:89:12|Pruning register bits 31 to 22 of prod_reg[18][31:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@W: CL279 :"/home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/fir.sv":89:4:89:12|Pruning register bits 31 to 22 of prod_reg[19][31:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@W: CL279 :"/home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/fir.sv":89:4:89:12|Pruning register bits 31 to 22 of prod_reg[20][31:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@W: CL279 :"/home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/fir.sv":89:4:89:12|Pruning register bits 31 to 22 of prod_reg[21][31:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@W: CL279 :"/home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/fir.sv":89:4:89:12|Pruning register bits 31 to 22 of prod_reg[22][31:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@W: CL279 :"/home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/fir.sv":89:4:89:12|Pruning register bits 31 to 22 of prod_reg[23][31:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@W: CL279 :"/home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/fir.sv":89:4:89:12|Pruning register bits 31 to 22 of prod_reg[24][31:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@W: CL279 :"/home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/fir.sv":89:4:89:12|Pruning register bits 31 to 22 of prod_reg[25][31:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@W: CL279 :"/home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/fir.sv":89:4:89:12|Pruning register bits 31 to 22 of prod_reg[26][31:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@W: CL279 :"/home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/fir.sv":89:4:89:12|Pruning register bits 31 to 22 of prod_reg[27][31:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@W: CL279 :"/home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/fir.sv":89:4:89:12|Pruning register bits 31 to 22 of prod_reg[28][31:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@W: CL279 :"/home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/fir.sv":89:4:89:12|Pruning register bits 31 to 22 of prod_reg[29][31:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@W: CL279 :"/home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/fir.sv":89:4:89:12|Pruning register bits 31 to 22 of prod_reg[30][31:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@W: CL279 :"/home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/fir.sv":89:4:89:12|Pruning register bits 31 to 22 of prod_reg[31][31:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@W: CL279 :"/home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/fir.sv":89:4:89:12|Pruning register bits 31 to 28 of y_reg[31:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+Running optimization stage 2 on fir_32s_8s_32s_32s_10s_32s_5s .......
+@W: CL279 :"/home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/fir.sv":89:4:89:12|Pruning register bits 31 to 22 of prod_reg[0][31:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@W: CL279 :"/home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/fir.sv":89:4:89:12|Pruning register bits 31 to 22 of prod_reg[1][31:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@W: CL279 :"/home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/fir.sv":89:4:89:12|Pruning register bits 31 to 22 of prod_reg[2][31:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@W: CL279 :"/home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/fir.sv":89:4:89:12|Pruning register bits 31 to 22 of prod_reg[3][31:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@W: CL279 :"/home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/fir.sv":89:4:89:12|Pruning register bits 31 to 22 of prod_reg[4][31:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@W: CL279 :"/home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/fir.sv":89:4:89:12|Pruning register bits 31 to 22 of prod_reg[5][31:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@W: CL279 :"/home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/fir.sv":89:4:89:12|Pruning register bits 31 to 22 of prod_reg[6][31:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@W: CL279 :"/home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/fir.sv":89:4:89:12|Pruning register bits 31 to 22 of prod_reg[7][31:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@W: CL279 :"/home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/fir.sv":89:4:89:12|Pruning register bits 31 to 22 of prod_reg[8][31:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@W: CL279 :"/home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/fir.sv":89:4:89:12|Pruning register bits 31 to 22 of prod_reg[9][31:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@W: CL279 :"/home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/fir.sv":89:4:89:12|Pruning register bits 31 to 22 of prod_reg[10][31:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@W: CL279 :"/home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/fir.sv":89:4:89:12|Pruning register bits 31 to 22 of prod_reg[11][31:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@W: CL279 :"/home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/fir.sv":89:4:89:12|Pruning register bits 31 to 22 of prod_reg[12][31:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@W: CL279 :"/home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/fir.sv":89:4:89:12|Pruning register bits 31 to 22 of prod_reg[13][31:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@W: CL279 :"/home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/fir.sv":89:4:89:12|Pruning register bits 31 to 22 of prod_reg[14][31:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@W: CL279 :"/home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/fir.sv":89:4:89:12|Pruning register bits 31 to 22 of prod_reg[15][31:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@W: CL279 :"/home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/fir.sv":89:4:89:12|Pruning register bits 31 to 22 of prod_reg[16][31:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@W: CL279 :"/home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/fir.sv":89:4:89:12|Pruning register bits 31 to 22 of prod_reg[17][31:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@W: CL279 :"/home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/fir.sv":89:4:89:12|Pruning register bits 31 to 22 of prod_reg[18][31:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@W: CL279 :"/home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/fir.sv":89:4:89:12|Pruning register bits 31 to 22 of prod_reg[19][31:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@W: CL279 :"/home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/fir.sv":89:4:89:12|Pruning register bits 31 to 22 of prod_reg[20][31:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@W: CL279 :"/home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/fir.sv":89:4:89:12|Pruning register bits 31 to 22 of prod_reg[21][31:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@W: CL279 :"/home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/fir.sv":89:4:89:12|Pruning register bits 31 to 22 of prod_reg[22][31:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@W: CL279 :"/home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/fir.sv":89:4:89:12|Pruning register bits 31 to 22 of prod_reg[23][31:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@W: CL279 :"/home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/fir.sv":89:4:89:12|Pruning register bits 31 to 22 of prod_reg[24][31:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@W: CL279 :"/home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/fir.sv":89:4:89:12|Pruning register bits 31 to 22 of prod_reg[25][31:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@W: CL279 :"/home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/fir.sv":89:4:89:12|Pruning register bits 31 to 22 of prod_reg[26][31:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@W: CL279 :"/home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/fir.sv":89:4:89:12|Pruning register bits 31 to 22 of prod_reg[27][31:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@W: CL279 :"/home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/fir.sv":89:4:89:12|Pruning register bits 31 to 22 of prod_reg[28][31:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@W: CL279 :"/home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/fir.sv":89:4:89:12|Pruning register bits 31 to 22 of prod_reg[29][31:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@W: CL279 :"/home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/fir.sv":89:4:89:12|Pruning register bits 31 to 22 of prod_reg[30][31:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@W: CL279 :"/home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/fir.sv":89:4:89:12|Pruning register bits 31 to 22 of prod_reg[31][31:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@W: CL279 :"/home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/fir.sv":89:4:89:12|Pruning register bits 31 to 28 of y_reg[31:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
 Running optimization stage 2 on demodulate .......
-@W: CL279 :"/home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/demodulate.sv":92:4:92:12|Pruning register bits 31 to 22 of demod_out[31:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
-@W: CL279 :"/home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/demodulate.sv":92:4:92:12|Pruning register bits 31 to 24 of stg1_r_val[31:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
-@W: CL279 :"/home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/demodulate.sv":92:4:92:12|Pruning register bits 31 to 23 of stg1_i_val[31:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
-Running optimization stage 2 on fir_20s_1s_32s_32s_10s .......
-@W: CL279 :"/home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/fir.sv":35:4:35:12|Pruning register bits 31 to 27 of y_reg[31:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@W: CL279 :"/home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/demodulate.sv":113:12:113:20|Pruning register bits 31 to 2 of div_pipe[0].p_rem[1][31:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@W: CL279 :"/home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/demodulate.sv":113:12:113:20|Pruning register bits 10 to 2 of div_pipe[0].p_num[1][31:1]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@W: CL260 :"/home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/demodulate.sv":216:4:216:12|Pruning register bit 0 of stg3c_prod_reg[31:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.
+@W: CL260 :"/home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/demodulate.sv":216:4:216:12|Pruning register bit 31 of stg3b_angle_signed_reg[31:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.
+@W: CL260 :"/home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/demodulate.sv":216:4:216:12|Pruning register bit 31 of stg3a_angle[31:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.
+@N: CL189 :"/home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/demodulate.sv":113:12:113:20|Register bit div_pipe[0].p_num[1][1] is always 0.
+@N: CL189 :"/home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/demodulate.sv":113:12:113:20|Register bit div_pipe[0].p_rem[1][1] is always 0.
+@W: CL260 :"/home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/demodulate.sv":113:12:113:20|Pruning register bit 1 of div_pipe[0].p_rem[1][1:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.
+@W: CL279 :"/home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/demodulate.sv":113:12:113:20|Pruning register bits 11 to 2 of div_pipe[1].p_num[2][31:2]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@W: CL169 :"/home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/demodulate.sv":113:12:113:20|Pruning unused register div_pipe[0].p_num[1][1]. Make sure that there are no unused intermediate registers.
+@W: CL279 :"/home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/demodulate.sv":113:12:113:20|Pruning register bits 31 to 3 of div_pipe[1].p_rem[2][31:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@W: CL279 :"/home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/demodulate.sv":113:12:113:20|Pruning register bits 12 to 4 of div_pipe[2].p_num[3][31:3]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@W: CL260 :"/home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/demodulate.sv":113:12:113:20|Pruning register bit 2 of div_pipe[1].p_rem[2][2:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.
+@W: CL279 :"/home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/demodulate.sv":113:12:113:20|Pruning register bits 13 to 5 of div_pipe[3].p_num[4][31:4]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@W: CL169 :"/home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/demodulate.sv":113:12:113:20|Pruning unused register div_pipe[2].p_num[3][3]. Make sure that there are no unused intermediate registers.
+@W: CL279 :"/home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/demodulate.sv":113:12:113:20|Pruning register bits 31 to 4 of div_pipe[2].p_rem[3][31:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@W: CL279 :"/home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/demodulate.sv":113:12:113:20|Pruning register bits 14 to 6 of div_pipe[4].p_num[5][31:5]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@W: CL169 :"/home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/demodulate.sv":113:12:113:20|Pruning unused register div_pipe[3].p_num[4][4]. Make sure that there are no unused intermediate registers.
+@W: CL279 :"/home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/demodulate.sv":216:4:216:12|Pruning register bits 30 to 23 of stg3a_angle[30:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@W: CL279 :"/home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/demodulate.sv":216:4:216:12|Pruning register bits 31 to 22 of demod_out[31:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@W: CL279 :"/home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/demodulate.sv":216:4:216:12|Pruning register bits 31 to 24 of stg1_r_val[31:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@W: CL279 :"/home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/demodulate.sv":216:4:216:12|Pruning register bits 31 to 23 of stg1_i_val[31:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@W: CL279 :"/home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/demodulate.sv":113:12:113:20|Pruning register bits 15 to 7 of div_pipe[5].p_num[6][31:6]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@W: CL279 :"/home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/demodulate.sv":216:4:216:12|Pruning register bits 30 to 24 of stg3b_angle_signed_reg[30:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@W: CL279 :"/home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/demodulate.sv":113:12:113:20|Pruning register bits 16 to 8 of div_pipe[6].p_num[7][31:7]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@W: CL279 :"/home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/demodulate.sv":113:12:113:20|Pruning register bits 17 to 9 of div_pipe[7].p_num[8][31:8]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@W: CL279 :"/home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/demodulate.sv":113:12:113:20|Pruning register bits 18 to 10 of div_pipe[8].p_num[9][31:9]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@W: CL279 :"/home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/demodulate.sv":113:12:113:20|Pruning register bits 19 to 11 of div_pipe[9].p_num[10][31:10]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@W: CL279 :"/home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/demodulate.sv":113:12:113:20|Pruning register bits 20 to 12 of div_pipe[10].p_num[11][31:11]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@W: CL279 :"/home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/demodulate.sv":113:12:113:20|Pruning register bits 21 to 13 of div_pipe[11].p_num[12][31:12]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@W: CL279 :"/home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/demodulate.sv":113:12:113:20|Pruning register bits 22 to 14 of div_pipe[12].p_num[13][31:13]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@W: CL279 :"/home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/demodulate.sv":113:12:113:20|Pruning register bits 23 to 15 of div_pipe[13].p_num[14][31:14]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@W: CL279 :"/home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/demodulate.sv":113:12:113:20|Pruning register bits 24 to 16 of div_pipe[14].p_num[15][31:15]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@W: CL279 :"/home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/demodulate.sv":113:12:113:20|Pruning register bits 25 to 17 of div_pipe[15].p_num[16][31:16]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@W: CL279 :"/home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/demodulate.sv":113:12:113:20|Pruning register bits 26 to 18 of div_pipe[16].p_num[17][31:17]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@W: CL279 :"/home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/demodulate.sv":113:12:113:20|Pruning register bits 27 to 19 of div_pipe[17].p_num[18][31:18]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@W: CL279 :"/home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/demodulate.sv":113:12:113:20|Pruning register bits 28 to 20 of div_pipe[18].p_num[19][31:19]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+
+Only the first 100 messages of id 'CL279' are reported. To see all messages use 'report_messages -log /home/gel8580/CE387/Final_Project/FM_Radio/imp/syn/rev_1/synwork//distcomp/distcomp0/distcomp0.log -id CL279' in the Tcl shell. To see all messages in future runs, use the command 'message_override -limit {CL279} -count unlimited' in the Tcl shell.
+@W: CL260 :"/home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/demodulate.sv":113:12:113:20|Pruning register bit 31 of div_pipe[29].p_num[30][31:30]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.
+@N: CL189 :"/home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/demodulate.sv":113:12:113:20|Register bit div_pipe[4].p_num[5][5] is always 0.
+@N: CL189 :"/home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/demodulate.sv":113:12:113:20|Register bit div_pipe[2].p_rem[3][3] is always 0.
+@W: CL260 :"/home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/demodulate.sv":113:12:113:20|Pruning register bit 3 of div_pipe[2].p_rem[3][3:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.
+@W: CL169 :"/home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/demodulate.sv":113:12:113:20|Pruning unused register div_pipe[4].p_num[5][5]. Make sure that there are no unused intermediate registers.
+@W: CL169 :"/home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/demodulate.sv":113:12:113:20|Pruning unused register div_pipe[5].p_num[6][6]. Make sure that there are no unused intermediate registers.
+Running optimization stage 2 on fir_20s_1s_32s_32s_10s_32s_5s .......
 
 For a summary of runtime and memory usage per design unit, please see file:
 ==========================================================
@@ -180,11 +495,11 @@ For a summary of runtime and memory usage per design unit, please see file:
 
 @END
 
-At c_ver Exit (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 88MB peak: 90MB)
+At c_ver Exit (Real Time elapsed 0h:00m:05s; CPU Time elapsed 0h:00m:04s; Memory used current: 148MB peak: 167MB)
 
-Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+Process took 0h:00m:05s realtime, 0h:00m:04s cputime
 
 Process completed successfully.
-# Mon Mar  2 16:23:33 2026
+# Mon Mar  2 23:28:25 2026
 
 ###########################################################]

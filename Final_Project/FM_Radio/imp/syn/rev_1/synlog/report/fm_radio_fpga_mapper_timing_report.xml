@@ -16,8 +16,8 @@ Max Top 5 critical clocks will be reported. For rest user needs to refer to Deta
 </row>
 <row>
 <data>fm_radio_top|clk</data>
-<data>11.5 MHz</data>
-<data>9.8 MHz</data>
-<data>-15.303</data>
+<data>114.3 MHz</data>
+<data>89.6 MHz</data>
+<data>-2.409</data>
 </row>
 </report_table>

@@ -1,15 +1,15 @@
 @P:  Part : ep4ce115fc23-7
-@P:  Worst Slack : -15.303
-@P:  fm_radio_top|clk - Estimated Frequency : 9.8 MHz
-@P:  fm_radio_top|clk - Requested Frequency : 11.5 MHz
-@P:  fm_radio_top|clk - Estimated Period : 102.019
-@P:  fm_radio_top|clk - Requested Period : 86.716
-@P:  fm_radio_top|clk - Slack : -15.303
+@P:  Worst Slack : -2.409
+@P:  fm_radio_top|clk - Estimated Frequency : 89.6 MHz
+@P:  fm_radio_top|clk - Requested Frequency : 114.3 MHz
+@P:  fm_radio_top|clk - Estimated Period : 11.157
+@P:  fm_radio_top|clk - Requested Period : 8.748
+@P:  fm_radio_top|clk - Slack : -2.409
 @P: fm_radio_top Part : ep4ce115fc23-7
 @P: fm_radio_top I/O ATOMs : 67
-@P: fm_radio_top Total LUTs : 29764 
-@P: fm_radio_top Register bits : 4133
+@P: fm_radio_top Total LUTs : 21948 
+@P: fm_radio_top Register bits : 11626
 @P: fm_radio_top .Simple_Multipliers_18_bit : 65
 @P: fm_radio_top .Simple_Multipliers_36_bit : 46
 @P: fm_radio_top DSP Blocks : 249 (498 nine-bit DSP elements)
-@P:  CPU Time : 0h:04m:03s
+@P:  CPU Time : 0h:01m:41s

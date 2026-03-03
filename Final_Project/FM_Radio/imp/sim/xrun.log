@@ -1,5 +1,5 @@
 xrun(64): 18.09-s011: (c) Copyright 1995-2019 Cadence Design Systems, Inc.
-TOOL:	xrun(64)	18.09-s011: Started on Mar 02, 2026 at 16:32:44 CST
+TOOL:	xrun(64)	18.09-s011: Started on Mar 03, 2026 at 10:07:38 CST
 xrun
 	-sv
 	-access +rwc
@@ -15,128 +15,6 @@ xrun
 	../sv/add_sub.sv
 	../sv/fm_radio_top.sv
 	../sv/fm_radio_top_tb.sv
-Recompiling... reason: file '../sv/fir.sv' is newer than expected.
-	expected: Mon Mar  2 16:32:00 2026
-	actual:   Mon Mar  2 16:32:41 2026
-file: ../sv/fir.sv
-	module worklib.fir:sv
-		errors: 0, warnings: 0
-file: ../sv/fm_radio_top.sv
-//              ├─► demodulate ─► fir(LPR,×8) ─[4-cy delay]─► add_sub(+) ─► deemph ─► gain ─► left
-                |
-xmvlog: *W,NONPRT (../sv/fm_radio_top.sv,8|16): non-printable character (0xe2) ignored.
-//              ├─► demodulate ─► fir(LPR,×8) ─[4-cy delay]─► add_sub(+) ─► deemph ─► gain ─► left
-                 |
-xmvlog: *W,NONPRT (../sv/fm_radio_top.sv,8|17): non-printable character (0x94) ignored.
-//              ├─► demodulate ─► fir(LPR,×8) ─[4-cy delay]─► add_sub(+) ─► deemph ─► gain ─► left
-                  |
-xmvlog: *W,NONPRT (../sv/fm_radio_top.sv,8|18): non-printable character (0x9c) ignored.
-//              ├─► demodulate ─► fir(LPR,×8) ─[4-cy delay]─► add_sub(+) ─► deemph ─► gain ─► left
-                   |
-xmvlog: *W,NONPRT (../sv/fm_radio_top.sv,8|19): non-printable character (0xe2) ignored.
-//              ├─► demodulate ─► fir(LPR,×8) ─[4-cy delay]─► add_sub(+) ─► deemph ─► gain ─► left
-                    |
-xmvlog: *W,NONPRT (../sv/fm_radio_top.sv,8|20): non-printable character (0x94) ignored.
-//              ├─► demodulate ─► fir(LPR,×8) ─[4-cy delay]─► add_sub(+) ─► deemph ─► gain ─► left
-                     |
-xmvlog: *W,NONPRT (../sv/fm_radio_top.sv,8|21): non-printable character (0x80) ignored.
-//              ├─► demodulate ─► fir(LPR,×8) ─[4-cy delay]─► add_sub(+) ─► deemph ─► gain ─► left
-                      |
-xmvlog: *W,NONPRT (../sv/fm_radio_top.sv,8|22): non-printable character (0xe2) ignored.
-//              ├─► demodulate ─► fir(LPR,×8) ─[4-cy delay]─► add_sub(+) ─► deemph ─► gain ─► left
-                       |
-xmvlog: *W,NONPRT (../sv/fm_radio_top.sv,8|23): non-printable character (0x96) ignored.
-//              ├─► demodulate ─► fir(LPR,×8) ─[4-cy delay]─► add_sub(+) ─► deemph ─► gain ─► left
-                        |
-xmvlog: *W,NONPRT (../sv/fm_radio_top.sv,8|24): non-printable character (0xba) ignored.
-//                       ├─► fir(BP_PILOT) ─► ×² ─► fir(HP) ─►─────────────────┐
-                         |
-xmvlog: *W,NONPRT (../sv/fm_radio_top.sv,10|25): non-printable character (0xe2) ignored.
-//                       ├─► fir(BP_PILOT) ─► ×² ─► fir(HP) ─►─────────────────┐
-                          |
-xmvlog: *W,NONPRT (../sv/fm_radio_top.sv,10|26): non-printable character (0x94) ignored.
-//                       ├─► fir(BP_PILOT) ─► ×² ─► fir(HP) ─►─────────────────┐
-                           |
-xmvlog: *W,NONPRT (../sv/fm_radio_top.sv,10|27): non-printable character (0x9c) ignored.
-//                       ├─► fir(BP_PILOT) ─► ×² ─► fir(HP) ─►─────────────────┐
-                            |
-xmvlog: *W,NONPRT (../sv/fm_radio_top.sv,10|28): non-printable character (0xe2) ignored.
-//                       ├─► fir(BP_PILOT) ─► ×² ─► fir(HP) ─►─────────────────┐
-                             |
-xmvlog: *W,NONPRT (../sv/fm_radio_top.sv,10|29): non-printable character (0x94) ignored.
-//                       ├─► fir(BP_PILOT) ─► ×² ─► fir(HP) ─►─────────────────┐
-                              |
-xmvlog: *W,NONPRT (../sv/fm_radio_top.sv,10|30): non-printable character (0x80) ignored.
-//                       ├─► fir(BP_PILOT) ─► ×² ─► fir(HP) ─►─────────────────┐
-                               |
-xmvlog: *W,NONPRT (../sv/fm_radio_top.sv,10|31): non-printable character (0xe2) ignored.
-//                       ├─► fir(BP_PILOT) ─► ×² ─► fir(HP) ─►─────────────────┐
-                                |
-xmvlog: *W,NONPRT (../sv/fm_radio_top.sv,10|32): non-printable character (0x96) ignored.
-//                       ├─► fir(BP_PILOT) ─► ×² ─► fir(HP) ─►─────────────────┐
-                                 |
-xmvlog: *W,NONPRT (../sv/fm_radio_top.sv,10|33): non-printable character (0xba) ignored.
-//                       └─► fir(BP_LMR) ─────────────────────► × ─► fir(LMR,×8)─┘
-                         |
-xmvlog: *W,NONPRT (../sv/fm_radio_top.sv,11|25): non-printable character (0xe2) ignored.
-//                       └─► fir(BP_LMR) ─────────────────────► × ─► fir(LMR,×8)─┘
-                          |
-xmvlog: *W,NONPRT (../sv/fm_radio_top.sv,11|26): non-printable character (0x94) ignored.
-//                       └─► fir(BP_LMR) ─────────────────────► × ─► fir(LMR,×8)─┘
-                           |
-xmvlog: *W,NONPRT (../sv/fm_radio_top.sv,11|27): non-printable character (0x94) ignored.
-//                       └─► fir(BP_LMR) ─────────────────────► × ─► fir(LMR,×8)─┘
-                            |
-xmvlog: *W,NONPRT (../sv/fm_radio_top.sv,11|28): non-printable character (0xe2) ignored.
-//                       └─► fir(BP_LMR) ─────────────────────► × ─► fir(LMR,×8)─┘
-                             |
-xmvlog: *W,NONPRT (../sv/fm_radio_top.sv,11|29): non-printable character (0x94) ignored.
-//                       └─► fir(BP_LMR) ─────────────────────► × ─► fir(LMR,×8)─┘
-                              |
-xmvlog: *W,NONPRT (../sv/fm_radio_top.sv,11|30): non-printable character (0x80) ignored.
-//                       └─► fir(BP_LMR) ─────────────────────► × ─► fir(LMR,×8)─┘
-                               |
-xmvlog: *W,NONPRT (../sv/fm_radio_top.sv,11|31): non-printable character (0xe2) ignored.
-//                       └─► fir(BP_LMR) ─────────────────────► × ─► fir(LMR,×8)─┘
-                                |
-xmvlog: *W,NONPRT (../sv/fm_radio_top.sv,11|32): non-printable character (0x96) ignored.
-//                       └─► fir(BP_LMR) ─────────────────────► × ─► fir(LMR,×8)─┘
-                                 |
-xmvlog: *W,NONPRT (../sv/fm_radio_top.sv,11|33): non-printable character (0xba) ignored.
-	Total errors/warnings found outside modules and primitives:
-		errors: 0, warnings: 27
-		Caching library 'worklib' ....... Done
-	Elaborating the design hierarchy:
-	Top level design units:
-		fir_pkg
-		qarctan_pkg
-		$unit_0x3946c3d9
-		fm_radio_top_tb
-xmelab: *W,DSEMEL: This SystemVerilog design will be simulated as per IEEE 1800-2009 SystemVerilog simulation semantics. Use -disable_sem2009 option for turning off SV 2009 simulation semantics.
-	Building instance overlay tables: .................... Done
-	Generating native compiled code:
-		worklib.fir:sv <0x7cec020a>
-			streams:   9, words: 10422
-		worklib.fir:sv <0x5e29e293>
-			streams:   9, words: 10426
-		worklib.fir:sv <0x1d6edb37>
-			streams:   9, words:  7638
-	Building instance specific data structures.
-	Loading native compiled code:     .................... Done
-	Design hierarchy summary:
-		                 Instances  Unique
-		Modules:                18       8
-		Verilog packages:        2       2
-		Registers:             232     136
-		Scalar wires:           62       -
-		Vectored wires:        254       -
-		Always blocks:          31      17
-		Initial blocks:          2       2
-		Cont. assignments:     197      11
-		Pseudo assignments:     75      75
-		Compilation units:       1       1
-		Simulation timescale:  1ps
-	Writing initial simulation snapshot: worklib.fm_radio_top_tb:sv
 Loading snapshot worklib.fm_radio_top_tb:sv .................... Done
 xmsim: *W,DSEM2009: This SystemVerilog design is simulated as per IEEE 1800-2009 SystemVerilog simulation semantics. Use -disable_sem2009 option for turning off SV 2009 simulation semantics.
 xcelium> source /vol/cadence2018/XCELIUM1809/tools/xcelium/files/xmsimrc
@@ -150,7 +28,7 @@ xcelium> run
 LEFT  : Checked=32768 Errors=0 PASS
 RIGHT : Checked=32768 Errors=0 PASS
 ===========================================
-Simulation complete via $finish(1) at time 2624475 NS + 0
+Simulation complete via $finish(1) at time 2626475 NS + 0
 ../sv/fm_radio_top_tb.sv:85         $finish;
 xcelium> exit
-TOOL:	xrun(64)	18.09-s011: Exiting on Mar 02, 2026 at 16:32:46 CST  (total: 00:00:02)
+TOOL:	xrun(64)	18.09-s011: Exiting on Mar 03, 2026 at 10:07:49 CST  (total: 00:00:11)

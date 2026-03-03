@@ -18,18 +18,18 @@
 </path_info>
 <path_info>
 <index> 1   </index>
-<start_inst> u_demod/stg1_i_val[22]   </start_inst>
+<start_inst> u_fir_ch_I/x_reg\[6\]_0[0]   </start_inst>
 <start_type> reg </start_type>
 <start_clock> fm_radio_top|clk:r   </start_clock>
-<end_inst> u_demod/stg2_r[28]   </end_inst>
+<end_inst> u_demod/x_42_ml_mu_mu_muladd_0[13:0]   </end_inst>
 <end_type> reg   </end_type>
 <end_clock> fm_radio_top|clk:r   </end_clock>
 <clock_skew>
 <val> 0.0 </val>
 <txt> 0.000 - 0.000 </txt>
 </clock_skew>
-<req_per> 86.716 </req_per>
-<slack> -15.303 </slack>
+<req_per> 14.441 </req_per>
+<slack> -3.652 </slack>
 <ucf>  </ucf>
 <status>
 <val> 0 </val>

@@ -13,13 +13,13 @@ The file contains the job information from mapper to be displayed as part of the
 </job_status>
 <job_info>
 <info name="Notes">
-<data>223</data>
+<data>302</data>
 <report_link name="more">
 <data>/home/gel8580/CE387/Final_Project/FM_Radio/imp/syn/rev_1/synlog/report/fm_radio_fpga_mapper_notes.txt</data>
 </report_link>
 </info>
 <info name="Warnings">
-<data>2322</data>
+<data>2345</data>
 <report_link name="more">
 <data>/home/gel8580/CE387/Final_Project/FM_Radio/imp/syn/rev_1/synlog/report/fm_radio_fpga_mapper_warnings.txt</data>
 </report_link>
@@ -31,16 +31,16 @@ The file contains the job information from mapper to be displayed as part of the
 </report_link>
 </info>
 <info name="CPU Time">
-<data>0h:04m:03s</data>
+<data>0h:01m:41s</data>
 </info>
 <info name="Real Time">
-<data>0h:04m:04s</data>
+<data>0h:01m:43s</data>
 </info>
 <info name="Peak Memory">
-<data>255MB</data>
+<data>306MB</data>
 </info>
 <info name="Date &amp; Time">
-<data type="timestamp">1772490463</data>
+<data type="timestamp">1772515815</data>
 </info>
 </job_info>
 </job_run_status>

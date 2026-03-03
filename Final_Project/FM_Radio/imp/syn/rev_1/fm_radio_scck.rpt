@@ -16,7 +16,7 @@ max stack size: 8388608 (bytes)
 
 Implementation : rev_1
 
-# Written on Mon Mar  2 16:23:36 2026
+# Written on Mon Mar  2 23:28:30 2026
 
 ##### FILES SYNTAX CHECKED ##############################################
 Constraint File(s):      (none)
@@ -36,19 +36,15 @@ Clock Summary
           Start                Requested     Requested     Clock        Clock                     Clock
 Level     Clock                Frequency     Period        Type         Group                     Load 
 -------------------------------------------------------------------------------------------------------
-0 -       System               1.0 MHz       1000.000      system       system_clkgroup           0    
-                                                                                                       
-0 -       fm_radio_top|clk     76.9 MHz      13.009        inferred     Autoconstr_clkgroup_0     6961 
+0 -       fm_radio_top|clk     113.2 MHz     8.836         inferred     Autoconstr_clkgroup_0     14389
 =======================================================================================================
 
 
 Clock Load Summary
 ******************
 
-                     Clock     Source        Clock Pin             Non-clock Pin     Non-clock Pin
-Clock                Load      Pin           Seq Example           Seq Example       Comb Example 
---------------------------------------------------------------------------------------------------
-System               0         -             -                     -                 -            
-                                                                                                  
-fm_radio_top|clk     6961      clk(port)     bp_lmr_d1[31:0].C     -                 -            
-==================================================================================================
+                     Clock     Source        Clock Pin                Non-clock Pin     Non-clock Pin
+Clock                Load      Pin           Seq Example              Seq Example       Comb Example 
+-----------------------------------------------------------------------------------------------------
+fm_radio_top|clk     14389     clk(port)     left_raw_reg_valid.C     -                 -            
+=====================================================================================================

@@ -5,10 +5,10 @@
 @N: MF284 |Setting synthesis effort to medium for the design
 @N: MH105 |UMR3 is only supported for HAPS-80.
 @N: MH105 |UMR3 is only supported for HAPS-80.
-@N: BN362 :"/home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/fir.sv":35:4:35:12|Removing sequential instance x_reg\[30\][31:0] (in view: work.fir_32s_1s_32s_32s_10s_0(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
-@N: BN362 :"/home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/fir.sv":35:4:35:12|Removing sequential instance x_reg\[29\][31:0] (in view: work.fir_32s_1s_32s_32s_10s_0(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
-@N: BN362 :"/home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/fir.sv":35:4:35:12|Removing sequential instance v_reg (in view: work.fir_20s_1s_32s_32s_10s_0(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
-@N: BN362 :"/home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/fir.sv":35:4:35:12|Removing sequential instance v_reg (in view: work.fir_32s_1s_32s_32s_10s_0(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
-@N: BN362 :"/home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/fir.sv":35:4:35:12|Removing sequential instance v_reg (in view: work.fir_32s_8s_32s_32s_10s_0(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@N: BN362 :"/home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/fir.sv":89:4:89:12|Removing sequential instance x_reg\[30\][31:0] (in view: work.fir_32s_1s_32s_32s_10s_32s_5s_0(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN362 :"/home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/fir.sv":89:4:89:12|Removing sequential instance x_reg\[29\][31:0] (in view: work.fir_32s_1s_32s_32s_10s_32s_5s_0(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN362 :"/home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/fir.sv":89:4:89:12|Removing sequential instance v_reg (in view: work.fir_20s_1s_32s_32s_10s_32s_5s_0(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@N: BN362 :"/home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/fir.sv":89:4:89:12|Removing sequential instance v_reg (in view: work.fir_32s_1s_32s_32s_10s_32s_5s_0(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@N: BN362 :"/home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/fir.sv":89:4:89:12|Removing sequential instance v_reg (in view: work.fir_32s_8s_32s_32s_10s_32s_5s_0(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
 @N: BN362 :"/home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/gain.sv":26:4:26:12|Removing sequential instance valid_out (in view: work.gain_0(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
 @N: BN225 |Writing default property annotation file /home/gel8580/CE387/Final_Project/FM_Radio/imp/syn/rev_1/fm_radio.sap.

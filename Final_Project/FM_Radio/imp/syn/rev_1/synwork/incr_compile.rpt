@@ -17,24 +17,37 @@ max stack size: 8388608 (bytes)
 Implementation : rev_1
 Synopsys HDL compiler and linker, Version comp2018q4p1, Build 004R, Built Nov 27 2018 21:19:49
 
-Modified Files: 1
+Modified Files: 3
 FID:  path (prevtimestamp, timestamp)
-2        /home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/demodulate.sv (2026-03-02 16:12:42, 2026-03-02 16:23:07)
+3        /home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/fir.sv (2026-03-02 23:09:44, 2026-03-02 23:27:52)
+4        /home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/fir_pkg.sv (2026-03-02 16:10:46, 2026-03-02 23:26:53)
+5        /home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/fm_radio_top.sv (2026-03-02 23:10:54, 2026-03-02 23:27:54)
 
 *******************************************************************
-Modules that may have changed as a result of file changes: 1
+Modules that may have changed as a result of file changes: 7
 MID:  lib.cell.view
+0        work.add_sub.verilog may have changed because the following files changed:
+                        /home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/fm_radio_top.sv (2026-03-02 23:10:54, 2026-03-02 23:27:54) <-- (may instantiate this module)
+1        work.deemphasis.verilog may have changed because the following files changed:
+                        /home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/fm_radio_top.sv (2026-03-02 23:10:54, 2026-03-02 23:27:54) <-- (may instantiate this module)
 2        work.demodulate.verilog may have changed because the following files changed:
-                        /home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/demodulate.sv (2026-03-02 16:12:42, 2026-03-02 16:23:07) <-- (module definition)
+                        /home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/fm_radio_top.sv (2026-03-02 23:10:54, 2026-03-02 23:27:54) <-- (may instantiate this module)
+3        work.fir.verilog may have changed because the following files changed:
+                        /home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/fir.sv (2026-03-02 23:09:44, 2026-03-02 23:27:52) <-- (module definition)
+                        /home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/fm_radio_top.sv (2026-03-02 23:10:54, 2026-03-02 23:27:54) <-- (may instantiate this module)
+4        work.fm_radio_top.verilog may have changed because the following files changed:
+                        /home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/fm_radio_top.sv (2026-03-02 23:10:54, 2026-03-02 23:27:54) <-- (module definition)
+5        work.gain.verilog may have changed because the following files changed:
+                        /home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/fm_radio_top.sv (2026-03-02 23:10:54, 2026-03-02 23:27:54) <-- (may instantiate this module)
+6        work.multiply.verilog may have changed because the following files changed:
+                        /home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/fm_radio_top.sv (2026-03-02 23:10:54, 2026-03-02 23:27:54) <-- (may instantiate this module)
 
 *******************************************************************
-Unmodified files: 19
+Unmodified files: 17
 FID:  path (timestamp)
 0        /home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/add_sub.sv (2026-03-02 15:28:58)
-1        /home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/deemphasis.sv (2026-03-02 16:12:51)
-3        /home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/fir.sv (2026-03-02 16:12:39)
-4        /home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/fir_pkg.sv (2026-03-02 16:10:46)
-5        /home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/fm_radio_top.sv (2026-03-02 15:48:45)
+1        /home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/deemphasis.sv (2026-03-02 23:08:01)
+2        /home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/demodulate.sv (2026-03-02 23:02:32)
 6        /home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/gain.sv (2026-03-02 16:13:08)
 7        /home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/multiply.sv (2026-03-02 16:13:14)
 8        /home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/qarctan.sv (2026-03-02 16:13:16)
@@ -51,11 +64,5 @@ FID:  path (timestamp)
 19       /vol/synopsys/fpga/O-2018.09-SP1/lib/vlog/umr_capim.v (2018-08-08 02:43:25)
 
 *******************************************************************
-Unchanged modules: 6
+Unchanged modules: 0
 MID:  lib.cell.view
-0        work.add_sub.verilog
-1        work.deemphasis.verilog
-3        work.fir.verilog
-4        work.fm_radio_top.verilog
-5        work.gain.verilog
-6        work.multiply.verilog

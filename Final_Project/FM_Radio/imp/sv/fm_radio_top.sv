@@ -102,11 +102,11 @@ module fm_radio_top import fir_pkg::*, qarctan_pkg::*; (
         .coeffs(hp_coeffs),.valid_out(hp_valid),.y_out(pilot_38k));
 
     // -------------------------------------------------------
-    // Stage 3c: L-R path — BP Filter + 2-cycle delay
+    // Stage 3c: L-R path — BP Filter + 3-cycle delay
     // -------------------------------------------------------
     // bp_lmr needs to wait for pilot_38k.
-    // pilot_38k path adds 2 cycles of latency: multiply_sq (1) + fir_hp (1)
-    // So we delay bp_lmr by 2 cycles.
+    // pilot_38k path: multiply_sq(1) + fir_hp(2 with pipeline) = 3 cycles
+    // So we delay bp_lmr by 3 cycles.
     logic                    bplmr_valid;
     logic signed [WIDTH-1:0] bp_lmr;
 
@@ -114,18 +114,20 @@ module fm_radio_top import fir_pkg::*, qarctan_pkg::*; (
         .clk(clk),.rst_n(rst_n),.valid_in(demod_valid),.x_in(demod),
         .coeffs(bplmr_coeffs),.valid_out(bplmr_valid),.y_out(bp_lmr));
 
-    logic signed [WIDTH-1:0] bp_lmr_d1, bp_lmr_d2;
-    logic                    bplmr_v_d1, bplmr_v_d2;
+    logic signed [WIDTH-1:0] bp_lmr_d1, bp_lmr_d2, bp_lmr_d3;
+    logic                    bplmr_v_d1, bplmr_v_d2, bplmr_v_d3;
 
     always_ff @(posedge clk or negedge rst_n) begin
         if (!rst_n) begin
-            bp_lmr_d1 <= '0; bp_lmr_d2 <= '0;
-            bplmr_v_d1 <= 1'b0; bplmr_v_d2 <= 1'b0;
+            bp_lmr_d1 <= '0; bp_lmr_d2 <= '0; bp_lmr_d3 <= '0;
+            bplmr_v_d1 <= 1'b0; bplmr_v_d2 <= 1'b0; bplmr_v_d3 <= 1'b0;
         end else begin
             bp_lmr_d1 <= bp_lmr;
             bplmr_v_d1 <= bplmr_valid;
             bp_lmr_d2 <= bp_lmr_d1;
             bplmr_v_d2 <= bplmr_v_d1;
+            bp_lmr_d3 <= bp_lmr_d2;
+            bplmr_v_d3 <= bplmr_v_d2;
         end
     end
 
@@ -135,10 +137,10 @@ module fm_radio_top import fir_pkg::*, qarctan_pkg::*; (
     logic                    lmr_bb_valid;
     logic signed [WIDTH-1:0] lmr_bb;
 
-    // Use hp_valid (or bplmr_v_d2, they arrive at the same time)
+    // Use hp_valid (or bplmr_v_d3, they arrive at the same time)
     multiply u_multiply_lmr (
         .clk(clk),.rst_n(rst_n),.valid_in(hp_valid),
-        .x_in(pilot_38k),.y_in(bp_lmr_d2),.valid_out(lmr_bb_valid),.out(lmr_bb));
+        .x_in(pilot_38k),.y_in(bp_lmr_d3),.valid_out(lmr_bb_valid),.out(lmr_bb));
 
     logic                    lmr_valid;
     logic signed [WIDTH-1:0] audio_lmr;
@@ -149,12 +151,12 @@ module fm_radio_top import fir_pkg::*, qarctan_pkg::*; (
 
     // -------------------------------------------------------
     // Stage 5: Timing alignment
-    // LMR path has 4 extra decim=1 stages before decimating FIR:
-    //   fir_bppilot(1) + multiply_sq(1) + fir_hp(1) + multiply_lmr(1) = 4 cycles
-    // plus fir_bplmr(1) feeds multiply_lmr, so p38k and bplmr arrive simultaneously.
-    // audio_lpr fires 4 cycles before audio_lmr → delay lpr 4 cycles.
+    // LMR path has 6 extra decim=1 stages before decimating FIR:
+    //   fir_bppilot(2) + multiply_sq(1) + fir_hp(2) + multiply_lmr(1) = 6 cycles
+    //   (each pipelined FIR now takes 2 cycles instead of 1)
+    // audio_lpr fires 6 cycles before audio_lmr → delay lpr 6 cycles.
     // -------------------------------------------------------
-    localparam int LPR_DELAY = 4;
+    localparam int LPR_DELAY = 6;
 
     logic signed [WIDTH-1:0] lpr_delay_d [0:LPR_DELAY-1];
     logic                    lpr_delay_v [0:LPR_DELAY-1];
@@ -197,18 +199,38 @@ module fm_radio_top import fir_pkg::*, qarctan_pkg::*; (
         .valid_out(right_raw_valid),.z_out(right_raw));
 
     // -------------------------------------------------------
+    // Stage 6.5: Pipeline Register between Add/Sub and De-emphasis
+    // -------------------------------------------------------
+    logic                    left_raw_reg_valid, right_raw_reg_valid;
+    logic signed [WIDTH-1:0] left_raw_reg,       right_raw_reg;
+
+    always_ff @(posedge clk or negedge rst_n) begin
+        if (!rst_n) begin
+            left_raw_reg_valid  <= 1'b0;
+            right_raw_reg_valid <= 1'b0;
+            left_raw_reg        <= '0;
+            right_raw_reg       <= '0;
+        end else begin
+            left_raw_reg_valid  <= left_raw_valid;
+            right_raw_reg_valid <= right_raw_valid;
+            if (left_raw_valid)  left_raw_reg  <= left_raw;
+            if (right_raw_valid) right_raw_reg <= right_raw;
+        end
+    end
+
+    // -------------------------------------------------------
     // Stage 7: De-emphasis (Left and Right)
     // -------------------------------------------------------
     logic                    left_deemph_valid,  right_deemph_valid;
     logic signed [WIDTH-1:0] left_deemph,         right_deemph;
 
     deemphasis u_deemph_L (
-        .clk(clk),.rst_n(rst_n),.valid_in(left_raw_valid),
-        .x_in(left_raw),.valid_out(left_deemph_valid),.y_out(left_deemph));
+        .clk(clk),.rst_n(rst_n),.valid_in(left_raw_reg_valid),
+        .x_in(left_raw_reg),.valid_out(left_deemph_valid),.y_out(left_deemph));
 
     deemphasis u_deemph_R (
-        .clk(clk),.rst_n(rst_n),.valid_in(right_raw_valid),
-        .x_in(right_raw),.valid_out(right_deemph_valid),.y_out(right_deemph));
+        .clk(clk),.rst_n(rst_n),.valid_in(right_raw_reg_valid),
+        .x_in(right_raw_reg),.valid_out(right_deemph_valid),.y_out(right_deemph));
 
     // -------------------------------------------------------
     // Stage 8: Gain / Volume Control (Left and Right)

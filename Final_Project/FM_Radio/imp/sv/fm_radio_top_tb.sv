@@ -75,8 +75,8 @@ module fm_radio_top_tb;
         end
         @(posedge clk); valid_in=0;
 
-        // Wait for pipeline to drain
-        repeat(300) @(posedge clk);
+        // Wait for pipeline to drain (32 extra cycles for pipelined divider)
+        repeat(500) @(posedge clk);
 
         $display("-------------------------------------------");
         $display("LEFT  : Checked=%0d Errors=%0d %s", l_checked, l_errors, (l_errors==0)?"PASS":"FAIL");

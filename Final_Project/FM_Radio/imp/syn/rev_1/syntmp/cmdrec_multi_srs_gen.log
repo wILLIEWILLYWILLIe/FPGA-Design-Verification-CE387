@@ -1,8 +1,8 @@
 /vol/synopsys/fpga/O-2018.09-SP1/bin/syn_nfilter  -link  -top  fm_radio_top  -multisrs  /home/gel8580/CE387/Final_Project/FM_Radio/imp/syn/rev_1/synwork/fm_radio_comp.srs  -osyn  /home/gel8580/CE387/Final_Project/FM_Radio/imp/syn/rev_1/synwork/fm_radio_mult.srs  -log  /home/gel8580/CE387/Final_Project/FM_Radio/imp/syn/rev_1/synlog/fm_radio_multi_srs_gen.srr 
 relcom:/vol/synopsys/fpga/O-2018.09-SP1/bin/syn_nfilter -link -top fm_radio_top -multisrs ../synwork/fm_radio_comp.srs -osyn ../synwork/fm_radio_mult.srs -log ../synlog/fm_radio_multi_srs_gen.srr
 rc:0 success:1 runtime:0
-file:../synwork/fm_radio_comp.srs|io:i|time:1772490214|size:49882|exec:0|csum:5045D7925335231D9FBBE148B1C2C8CD
-file:../synwork/fm_radio_mult.srs|io:o|time:1772490216|size:7680|exec:0|csum:
-file:../synlog/fm_radio_multi_srs_gen.srr|io:o|time:1772490216|size:1264|exec:0|csum:
+file:../synwork/fm_radio_comp.srs|io:i|time:1772515707|size:78104|exec:0|csum:8968DCF6B2A671DD842E653362F8A178
+file:../synwork/fm_radio_mult.srs|io:o|time:1772515709|size:9366|exec:0|csum:
+file:../synlog/fm_radio_multi_srs_gen.srr|io:o|time:1772515709|size:1264|exec:0|csum:
 file:/vol/synopsys/fpga/O-2018.09-SP1/linux_a_64/syn_nfilter|io:i|time:1543382463|size:12202632|exec:1|csum:2CF5CA82A12C53A85C3E36D57C2461DC
 file:/vol/synopsys/fpga/O-2018.09-SP1/bin/syn_nfilter|io:i|time:1543382354|size:368|exec:1|csum:004E4455B64BA10AD6A92FB2301610E0
