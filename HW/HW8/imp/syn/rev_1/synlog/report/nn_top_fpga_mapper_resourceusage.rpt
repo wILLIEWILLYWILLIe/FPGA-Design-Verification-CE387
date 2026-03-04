@@ -1,0 +1,27 @@
+##### START OF AREA REPORT #####[
+Design view:work.nn_top(verilog)
+Selecting part EP4CE115F23C7
+
+Total combinational functions 6370 of 114480 ( 5%)
+Logic element usage by number of inputs
+		  4 input functions 	 474
+		  3 input functions 	 842
+		  <=2 input functions 	 5054
+Logic elements by mode
+		  normal mode            2577
+		  arithmetic mode        3793
+Total registers 3294 of 114480 ( 2%)
+I/O pins 73 of 529 (14%), total I/O based on largest package of this part.
+
+Number of I/O registers
+			Input DDRs    :0
+			Output DDRs   :0
+
+DSP.Simple_Multipliers_18_bit: 60
+DSP Blocks:     60  (120 nine-bit DSP elements).
+DSP Utilization: 22.56% of available 266 blocks (532 nine-bit).
+ShiftTap:       0  (0 registers)
+Total ESB:      328192 bits 
+
+##### END OF AREA REPORT #####]
+

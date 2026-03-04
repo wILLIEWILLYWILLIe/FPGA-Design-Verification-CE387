@@ -1,0 +1,63 @@
+@N:: Applying property .distcompnoprune with value 1 on module layer in library work
+@N:: Applying property .noprune with value 1 on module layer in library work
+@N:: Applying property .distcomp_black_box with value 1 on module layer in library work
+@N:: Applying property syn_black_box with value 1 on module layer in library work
+@N:: Applying property .distcompmodetop with value 1 on module nn_top in library work
+@N:: Applying property .distcompnoprune with value 1 on module nn_top in library work
+@N:: Applying property .noprune with value 1 on module nn_top in library work
+@N:: Applying property .distcompnoprune with value 1 on module argmax in library work
+@N:: Applying property .noprune with value 1 on module argmax in library work
+@N:: Applying property .distcompnoprune with value 1 on module fifo in library work
+@N:: Applying property .noprune with value 1 on module fifo in library work
+@N: CG364 :"/home/gel8580/CE387/HW/HW8/imp/sv/nn_pkg.sv":4:8:4:13|Synthesizing module nn_pkg in library work.
+Selecting top level module nn_top
+@N: CG364 :"/home/gel8580/CE387/HW/HW8/imp/sv/fifo.sv":2:7:2:10|Synthesizing module fifo in library work.
+
+	FIFO_DATA_WIDTH=32'b00000000000000000000000000100000
+	FIFO_BUFFER_SIZE=32'b00000000000000000000000000010000
+	FIFO_ADDR_WIDTH=32'b00000000000000000000000000000101
+   Generated name = fifo_32s_16s_5s
+Running optimization stage 1 on fifo_32s_16s_5s .......
+@N: CL134 :"/home/gel8580/CE387/HW/HW8/imp/sv/fifo.sv":36:4:36:12|Found RAM fifo_buf, depth=16, width=32
+@N: CG364 :"/home/gel8580/CE387/HW/HW8/imp/sv/layer.sv":14:7:14:11|Synthesizing module layer in library work.
+
+	NUM_NEURONS=32'b00000000000000000000000000001010
+	INPUT_SIZE=32'b00000000000000000000001100010000
+	LAYER_ID=32'b00000000000000000000000000000000
+	BIAS_FILE=216'b001011100010111000101111011100110110111101110101011100100110001101100101001011110110110001100001011110010110010101110010001100000101111101100010011010010110000101110011011001010111001100101110011101000111100001110100
+   Generated name = layer_10s_784s_0s_../source/layer0_biases.txt
+@N: CG364 :"/home/gel8580/CE387/HW/HW8/imp/sv/layer.sv":14:7:14:11|Synthesizing module layer in library work.
+
+	NUM_NEURONS=32'b00000000000000000000000000001010
+	INPUT_SIZE=32'b00000000000000000000000000001010
+	LAYER_ID=32'b00000000000000000000000000000001
+	BIAS_FILE=216'b001011100010111000101111011100110110111101110101011100100110001101100101001011110110110001100001011110010110010101110010001100010101111101100010011010010110000101110011011001010111001100101110011101000111100001110100
+   Generated name = layer_10s_10s_1s_../source/layer1_biases.txt
+@N: CG364 :"/home/gel8580/CE387/HW/HW8/imp/sv/argmax.sv":7:7:7:12|Synthesizing module argmax in library work.
+
+	NUM_CLASSES=32'b00000000000000000000000000001010
+   Generated name = argmax_10s
+Running optimization stage 1 on argmax_10s .......
+@N: CG364 :"/home/gel8580/CE387/HW/HW8/imp/sv/nn_top.sv":10:7:10:12|Synthesizing module nn_top in library work.
+Running optimization stage 1 on nn_top .......
+Running optimization stage 2 on nn_top .......
+@N: CL201 :"/home/gel8580/CE387/HW/HW8/imp/sv/nn_top.sv":271:4:271:12|Trying to extract state machine for register state.
+Extracted state machine for register state
+State machine has 10 reachable states with original encodings of:
+   0000
+   0001
+   0010
+   0011
+   0100
+   0101
+   0110
+   0111
+   1000
+   1001
+Running optimization stage 2 on argmax_10s .......
+Running optimization stage 2 on fifo_32s_16s_5s .......
+
+For a summary of runtime and memory usage per design unit, please see file:
+==========================================================
+@L: /home/gel8580/CE387/HW/HW8/imp/syn/rev_1/synwork//distcomp/distcomp2/distcomp2.rt.csv
+

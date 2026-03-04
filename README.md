@@ -65,6 +65,17 @@ The repository is organized by homework assignment:
   - `hw7.pdf`: Assignment description
   - `note.md`: Design notes and timing optimization history
 
+- **HW/HW8/**: Homework 8 — Neural Network (MNIST Digit Classifier)
+  - `imp/`: Implementation directory
+    - `sv/`: SystemVerilog source files (`nn_top.sv`, `layer.sv`, `neuron.sv`, `fifo.sv`, `argmax.sv`, `nn_pkg.sv`, `nn_tb.sv`)
+    - `sim/`: Simulation files (`nn_sim.do`, `nn_uvm_sim.do`, `nn_uvm_wave.do`, `Makefile`)
+    - `syn/`: Synthesis scripts and output (`nn_top.prj`)
+    - `uvm/`: UVM verification environment (12 files: `nn_if.sv`, `my_uvm_pkg.sv`, `my_uvm_tb.sv`, `my_uvm_transaction.sv`, `my_uvm_sequence.sv`, `my_uvm_driver.sv`, `my_uvm_monitor.sv`, `my_uvm_scoreboard.sv`, `my_uvm_agent.sv`, `my_uvm_env.sv`, `my_uvm_test.sv`, `my_uvm_globals.sv`)
+    - `source/`: Weight/bias hex files and reference I/O (`x_test.txt`, `y_test.txt`)
+  - `neural_net/`: C reference model (`neural_net.c`)
+  - `hw8.pdf`: Assignment description
+  - `note.md`: Design notes, synthesis optimization history, and UVM verification results
+
 - **Demo/**: Demonstration files
   - `week1/`: Week 1 demos
   - `week2/`: Week 2 demos
@@ -81,6 +92,7 @@ To run simulations, navigate to the `sim` directory within each homework folder 
 - **HW5**: `HW/HW5/imp/sim`
 - **HW6**: `HW/HW6/imp/sim`
 - **HW7**: `HW/HW7/imp/sim`
+- **HW8**: `HW/HW8/imp/sim`
 
 Example for HW4:
 ```bash
@@ -99,6 +111,7 @@ To run synthesis, navigate to the `syn` directory within each homework folder an
 - **HW5**: `HW/HW5/imp/syn`
 - **HW6**: `HW/HW6/imp/syn`
 - **HW7**: `HW/HW7/imp/syn`
+- **HW8**: `HW/HW8/imp/syn`
 
 Example for HW5:
 ```bash

@@ -1,0 +1,197 @@
+xrun(64): 18.09-s011: (c) Copyright 1995-2019 Cadence Design Systems, Inc.
+TOOL:	xrun(64)	18.09-s011: Started on Mar 03, 2026 at 16:59:42 CST
+xrun
+	-sv
+	-access +rwc
+	-timescale 1ns/1ps
+	-64bit
+	-uvm
+	+incdir+../uvm
+	../sv/nn_pkg.sv
+	../sv/fifo.sv
+	../sv/neuron.sv
+	../sv/layer.sv
+	../sv/argmax.sv
+	../sv/nn_top.sv
+	../uvm/my_uvm_pkg.sv
+	../uvm/nn_if.sv
+	../uvm/my_uvm_tb.sv
+	+UVM_TESTNAME=my_uvm_test
+file: ../sv/nn_pkg.sv
+	package worklib.nn_pkg:sv
+		errors: 0, warnings: 0
+file: ../sv/fifo.sv
+	module worklib.fifo:sv
+		errors: 0, warnings: 0
+file: ../sv/neuron.sv
+	module worklib.neuron:sv
+		errors: 0, warnings: 0
+file: ../sv/layer.sv
+	module worklib.layer:sv
+		errors: 0, warnings: 0
+file: ../sv/argmax.sv
+	module worklib.argmax:sv
+		errors: 0, warnings: 0
+file: ../sv/nn_top.sv
+	module worklib.nn_top:sv
+		errors: 0, warnings: 0
+file: ../uvm/my_uvm_pkg.sv
+	package worklib.my_uvm_pkg:sv
+		errors: 0, warnings: 0
+file: ../uvm/nn_if.sv
+	interface worklib.nn_if:sv
+		errors: 0, warnings: 0
+file: ../uvm/my_uvm_tb.sv
+	module worklib.my_uvm_tb:sv
+		errors: 0, warnings: 0
+		Caching library 'worklib' ....... Done
+	Elaborating the design hierarchy:
+	Top level design units:
+		uvm_pkg
+		cdns_uvmapi
+		cdns_assert2uvm_pkg
+		cdns_uvm_pkg
+		nn_pkg
+		my_uvm_pkg
+		$unit_0x2a7250bd
+		my_uvm_tb
+xmelab: *W,DSEMEL: This SystemVerilog design will be simulated as per IEEE 1800-2009 SystemVerilog simulation semantics. Use -disable_sem2009 option for turning off SV 2009 simulation semantics.
+	Building instance overlay tables: .................... Done
+	Generating native compiled code:
+		worklib.argmax:sv <0x527c32b0>
+			streams:   7, words:  5279
+		worklib.neuron:sv <0x18b8de33>
+			streams:   7, words: 11647
+		worklib.neuron:sv <0x078dba2c>
+			streams:   7, words: 11674
+		worklib.fifo:sv <0x6449e5d4>
+			streams:  15, words:  5327
+		worklib.uvm_pkg:sv <0x1652a46c>
+			streams:  24, words: 25767
+		worklib.uvm_pkg:sv <0x0940c5fd>
+			streams:  24, words: 23429
+		worklib.uvm_pkg:sv <0x450f4c03>
+			streams:  70, words: 81450
+		worklib.uvm_pkg:sv <0x7d5f2869>
+			streams: 110, words: 182340
+		worklib.uvm_pkg:sv <0x2d892dbf>
+			streams:  26, words: 49170
+		worklib.uvm_pkg:sv <0x10c30bc6>
+			streams:  37, words: 49388
+		worklib.uvm_pkg:sv <0x6bd0b6ec>
+			streams: 219, words: 301033
+		worklib.uvm_pkg:sv <0x73dd1f5f>
+			streams:  24, words: 66974
+		worklib.my_uvm_tb:sv <0x5810e56f>
+			streams:  80, words: 127301
+		worklib.layer:sv <0x3d29806a>
+			streams:  33, words: 10929
+		worklib.layer:sv <0x6b19287b>
+			streams:  33, words: 10929
+		worklib.nn_top:sv <0x22f506dd>
+			streams:  30, words: 25004
+		worklib.my_uvm_pkg:sv <0x2004e3f1>
+			streams:   0, words:     0
+		worklib.nn_pkg:sv <0x7de55eeb>
+			streams:   1, words:   442
+	Building instance specific data structures.
+	Loading native compiled code:     .................... Done
+	Design hierarchy summary:
+		                       Instances  Unique
+		Modules:                      26       6
+		Interfaces:                    1       1
+		Verilog packages:              6       6
+		Registers:                 14604   10310
+		Scalar wires:                 90       -
+		Vectored wires:              102       -
+		Named events:                  4      12
+		Always blocks:                53      14
+		Initial blocks:              303     157
+		Parallel blocks:              27      28
+		Cont. assignments:            53      14
+		Pseudo assignments:           87      87
+		Assertions:                    2       2
+		Covergroup Instances:          0       2
+		Compilation units:             1       1
+		SV Class declarations:       197     311
+		SV Class specializations:    379     379
+		Simulation timescale:        1ps
+	Writing initial simulation snapshot: worklib.my_uvm_tb:sv
+Loading snapshot worklib.my_uvm_tb:sv .................... Done
+SVSEED default: 1
+xmsim: *W,RNDXCELON: Xceligen, the new SystemVerilog constraint solver is used. Disabling Xceligen and using the legacy constraint solver is possible with "xrun/xmsim -xceligen on=0 ...".
+xmsim: *W,DSEM2009: This SystemVerilog design is simulated as per IEEE 1800-2009 SystemVerilog simulation semantics. Use -disable_sem2009 option for turning off SV 2009 simulation semantics.
+xcelium> source /vol/cadence2018/XCELIUM1809/tools/xcelium/files/xmsimrc
+xcelium> source /vol/cadence2018/XCELIUM1809/tools/methodology/UVM/CDNS-1.1d/additions/sv/files/tcl/uvm_sim.tcl
+xcelium> run
+----------------------------------------------------------------
+CDNS-UVM-1.1d (18.09-s011)
+(C) 2007-2013 Mentor Graphics Corporation
+(C) 2007-2013 Cadence Design Systems, Inc.
+(C) 2006-2013 Synopsys, Inc.
+(C) 2011-2013 Cypress Semiconductor Corp.
+----------------------------------------------------------------
+
+  ***********       IMPORTANT RELEASE NOTES         ************
+
+  You are using a version of the UVM library that has been compiled
+  with `UVM_NO_DEPRECATED undefined.
+  See http://www.eda.org/svdb/view.php?id=3313 for more details.
+
+  You are using a version of the UVM library that has been compiled
+  with `UVM_OBJECT_MUST_HAVE_CONSTRUCTOR undefined.
+  See http://www.eda.org/svdb/view.php?id=3770 for more details.
+
+      (Specify +UVM_NO_RELNOTES to turn off this notice)
+
+UVM_INFO @ 0: reporter [RNTST] Running test my_uvm_test...
+UVM_INFO ../uvm/my_uvm_scoreboard.sv(82) @ 0: uvm_test_top.env.scoreboard [SCB] Expected label (ground truth): 7
+UVM_INFO ../uvm/my_uvm_driver.sv(25) @ 0: uvm_test_top.env.agent.driver [DRV] Waiting for reset deassertion
+UVM_INFO ../uvm/my_uvm_sequence.sv(23) @ 0: uvm_test_top.env.agent.sequencer@@seq [SEQ] Reading 784 input pixels from ../../neural_net/x_test.txt
+UVM_INFO ../uvm/my_uvm_driver.sv(29) @ 100000: uvm_test_top.env.agent.driver [DRV] Reset deasserted, starting drive loop
+UVM_INFO ../uvm/my_uvm_driver.sv(41) @ 145000: uvm_test_top.env.agent.driver [DRV] Driving 784 pixels into FIFO
+UVM_INFO ../uvm/my_uvm_driver.sv(51) @ 7986000: uvm_test_top.env.agent.driver [DRV] All pixels driven
+UVM_INFO ../uvm/my_uvm_sequence.sv(38) @ 7986000: uvm_test_top.env.agent.sequencer@@seq [SEQ] Sequence complete
+UVM_INFO ../uvm/my_uvm_monitor.sv(55) @ 8336000: uvm_test_top.env.agent.monitor [MON] Inference done! Predicted class: 7, Max score: 1
+UVM_INFO ../uvm/my_uvm_scoreboard.sv(106) @ 8336000: uvm_test_top.env.scoreboard [SCB] TEST PASSED! Predicted: 7, Expected: 7, Score: 1
+UVM_INFO /vol/cadence2018/XCELIUM1809/tools/methodology/UVM/CDNS-1.1d/sv/src/base/uvm_objection.svh(1268) @ 27986000: reporter [TEST_DONE] 'run' phase is ready to proceed to the 'extract' phase
+UVM_INFO ../uvm/my_uvm_monitor.sv(65) @ 27986000: uvm_test_top.env.agent.monitor [MON] --- PERFORMANCE SUMMARY ---
+UVM_INFO ../uvm/my_uvm_monitor.sv(66) @ 27986000: uvm_test_top.env.agent.monitor [MON] First Write Cycle:    6
+UVM_INFO ../uvm/my_uvm_monitor.sv(67) @ 27986000: uvm_test_top.env.agent.monitor [MON] Inference Done Cycle: 824
+UVM_INFO ../uvm/my_uvm_monitor.sv(68) @ 27986000: uvm_test_top.env.agent.monitor [MON] Total Latency:        818 cycles
+UVM_INFO ../uvm/my_uvm_monitor.sv(69) @ 27986000: uvm_test_top.env.agent.monitor [MON] @100MHz Inference:    8.18 us
+UVM_INFO ../uvm/my_uvm_monitor.sv(70) @ 27986000: uvm_test_top.env.agent.monitor [MON] ---------------------------
+UVM_INFO ../uvm/my_uvm_scoreboard.sv(116) @ 27986000: uvm_test_top.env.scoreboard [SCB] ALL 1 TESTS PASSED!
+xmsim: *N,COVNSM: (File: ../uvm/my_uvm_scoreboard.sv, Line: 122):(Time: 27986 NS + 29) Sampling of covergroup type "my_uvm_scoreboard::cg_prediction" (../uvm/my_uvm_scoreboard.sv:20), referred in the statement is not enabled. As a result, coverage methods get_coverage(), get_inst_coverage(), get_hitcount(), and get_inst_hitcount() will return 0 coverage.
+UVM_INFO ../uvm/my_uvm_scoreboard.sv(122) @ 27986000: uvm_test_top.env.scoreboard [SCB] Prediction Coverage: 0.0%
+xmsim: *N,COVNSM: (File: ../uvm/my_uvm_scoreboard.sv, Line: 123):(Time: 27986 NS + 29) Sampling of covergroup type "my_uvm_scoreboard::cg_layer_activations" (../uvm/my_uvm_scoreboard.sv:41), referred in the statement is not enabled. As a result, coverage methods get_coverage(), get_inst_coverage(), get_hitcount(), and get_inst_hitcount() will return 0 coverage.
+UVM_INFO ../uvm/my_uvm_scoreboard.sv(123) @ 27986000: uvm_test_top.env.scoreboard [SCB] Layer Activations Coverage: 0.0%
+
+--- UVM Report catcher Summary ---
+
+
+Number of demoted UVM_FATAL reports  :    0
+Number of demoted UVM_ERROR reports  :    0
+Number of demoted UVM_WARNING reports:    0
+Number of caught UVM_FATAL reports   :    0
+Number of caught UVM_ERROR reports   :    0
+Number of caught UVM_WARNING reports :    0
+
+--- UVM Report Summary ---
+
+** Report counts by severity
+UVM_INFO :   20
+UVM_WARNING :    0
+UVM_ERROR :    0
+UVM_FATAL :    0
+** Report counts by id
+[DRV]     4
+[MON]     7
+[RNTST]     1
+[SCB]     5
+[SEQ]     2
+[TEST_DONE]     1
+Simulation complete via $finish(1) at time 27986 NS + 44
+/vol/cadence2018/XCELIUM1809/tools/methodology/UVM/CDNS-1.1d/sv/src/base/uvm_root.svh:457     $finish;
+xcelium> exit
+TOOL:	xrun(64)	18.09-s011: Exiting on Mar 03, 2026 at 16:59:45 CST  (total: 00:00:03)

@@ -1,0 +1,27 @@
+
+. Module name, ATOMS, ARITHMETIC MODE, REGISTERS, SYNC RAMS, MACs
+. nn_top, 2577, 0, 3294, 11, 120
+.	. argmax_10s, 135, 0, 27, 0, 0
+.	. fifo_32s_16s_5s, 21, 0, 11, 1, 0
+.	. layer, 1136, 0, 1491, 10, 80
+.	.	. neuron_784s_\.\.\/source\/layer0_neuron0_weights\.txt_Z1, 113, 0, 150, 1, 8
+.	.	. neuron_784s_\.\.\/source\/layer0_neuron1_weights\.txt_Z2, 119, 0, 149, 1, 8
+.	.	. neuron_784s_\.\.\/source\/layer0_neuron2_weights\.txt_Z3, 113, 0, 149, 1, 8
+.	.	. neuron_784s_\.\.\/source\/layer0_neuron3_weights\.txt_Z4, 113, 0, 149, 1, 8
+.	.	. neuron_784s_\.\.\/source\/layer0_neuron4_weights\.txt_Z5, 113, 0, 149, 1, 8
+.	.	. neuron_784s_\.\.\/source\/layer0_neuron5_weights\.txt_Z6, 113, 0, 149, 1, 8
+.	.	. neuron_784s_\.\.\/source\/layer0_neuron6_weights\.txt_Z7, 113, 0, 149, 1, 8
+.	.	. neuron_784s_\.\.\/source\/layer0_neuron7_weights\.txt_Z8, 113, 0, 149, 1, 8
+.	.	. neuron_784s_\.\.\/source\/layer0_neuron8_weights\.txt_Z9, 113, 0, 149, 1, 8
+.	.	. neuron_784s_\.\.\/source\/layer0_neuron9_weights\.txt_Z10, 113, 0, 149, 1, 8
+.	. layer_0, 1130, 0, 1378, 0, 40
+.	.	. neuron_10s_\.\.\/source\/layer1_neuron0_weights\.txt_Z1, 131, 0, 142, 0, 4
+.	.	. neuron_10s_\.\.\/source\/layer1_neuron1_weights\.txt_Z2, 112, 0, 141, 0, 4
+.	.	. neuron_10s_\.\.\/source\/layer1_neuron2_weights\.txt_Z3, 111, 0, 125, 0, 4
+.	.	. neuron_10s_\.\.\/source\/layer1_neuron3_weights\.txt_Z4, 109, 0, 125, 0, 4
+.	.	. neuron_10s_\.\.\/source\/layer1_neuron4_weights\.txt_Z5, 111, 0, 141, 0, 4
+.	.	. neuron_10s_\.\.\/source\/layer1_neuron5_weights\.txt_Z6, 113, 0, 141, 0, 4
+.	.	. neuron_10s_\.\.\/source\/layer1_neuron6_weights\.txt_Z7, 110, 0, 141, 0, 4
+.	.	. neuron_10s_\.\.\/source\/layer1_neuron7_weights\.txt_Z8, 111, 0, 141, 0, 4
+.	.	. neuron_10s_\.\.\/source\/layer1_neuron8_weights\.txt_Z9, 112, 0, 141, 0, 4
+.	.	. neuron_10s_\.\.\/source\/layer1_neuron9_weights\.txt_Z10, 110, 0, 140, 0, 4

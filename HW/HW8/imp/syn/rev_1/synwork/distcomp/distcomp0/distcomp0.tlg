@@ -1,0 +1,127 @@
+@N:: Applying property .distcompmodetop with value 1 on module layer in library work
+@N:: Applying property .distcompnoprune with value 1 on module layer in library work
+@N:: Applying property .noprune with value 1 on module layer in library work
+@N:: Applying property .distcompnoprune with value 1 on module neuron in library work
+@N:: Applying property .noprune with value 1 on module neuron in library work
+@N: CG364 :"/home/gel8580/CE387/HW/HW8/imp/sv/nn_pkg.sv":4:8:4:13|Synthesizing module nn_pkg in library work.
+Selecting top level module layer
+@N: CG364 :"/home/gel8580/CE387/HW/HW8/imp/sv/layer.sv":14:7:14:11|Synthesizing module layer in library work.
+Opening data file ../source/layer1_biases.txt from directory /home/gel8580/CE387/HW/HW8/imp/syn/../source
+@W: CG532 :"/home/gel8580/CE387/HW/HW8/imp/sv/layer.sv":36:4:36:10|Within an initial block, only Verilog force statements and memory $readmemh/$readmemb initialization statements are recognized, and all other content is ignored.
+@N: CG364 :"/home/gel8580/CE387/HW/HW8/imp/sv/neuron.sv":11:7:11:12|Synthesizing module neuron in library work.
+
+	INPUT_SIZE=32'b00000000000000000000000000001010
+	WEIGHT_FILE=288'b001011100010111000101111011100110110111101110101011100100110001101100101001011110110110001100001011110010110010101110010001100010101111101101110011001010111010101110010011011110110111000110000010111110111011101100101011010010110011101101000011101000111001100101110011101000111100001110100
+   Generated name = neuron_10s_../source/layer1_neuron0_weights.txt_Z1
+Opening data file ../source/layer1_neuron0_weights.txt from directory /home/gel8580/CE387/HW/HW8/imp/syn/../source
+@W: CG532 :"/home/gel8580/CE387/HW/HW8/imp/sv/neuron.sv":30:4:30:10|Within an initial block, only Verilog force statements and memory $readmemh/$readmemb initialization statements are recognized, and all other content is ignored.
+Running optimization stage 1 on neuron_10s_../source/layer1_neuron0_weights.txt_Z1 .......
+@W: CL279 :"/home/gel8580/CE387/HW/HW8/imp/sv/neuron.sv":125:4:125:12|Pruning register bits 62 to 46 of product_reg[63:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@N: CG364 :"/home/gel8580/CE387/HW/HW8/imp/sv/neuron.sv":11:7:11:12|Synthesizing module neuron in library work.
+
+	INPUT_SIZE=32'b00000000000000000000000000001010
+	WEIGHT_FILE=288'b001011100010111000101111011100110110111101110101011100100110001101100101001011110110110001100001011110010110010101110010001100010101111101101110011001010111010101110010011011110110111000110001010111110111011101100101011010010110011101101000011101000111001100101110011101000111100001110100
+   Generated name = neuron_10s_../source/layer1_neuron1_weights.txt_Z2
+Opening data file ../source/layer1_neuron1_weights.txt from directory /home/gel8580/CE387/HW/HW8/imp/syn/../source
+@W: CG532 :"/home/gel8580/CE387/HW/HW8/imp/sv/neuron.sv":30:4:30:10|Within an initial block, only Verilog force statements and memory $readmemh/$readmemb initialization statements are recognized, and all other content is ignored.
+Running optimization stage 1 on neuron_10s_../source/layer1_neuron1_weights.txt_Z2 .......
+@W: CL279 :"/home/gel8580/CE387/HW/HW8/imp/sv/neuron.sv":125:4:125:12|Pruning register bits 62 to 46 of product_reg[63:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@N: CG364 :"/home/gel8580/CE387/HW/HW8/imp/sv/neuron.sv":11:7:11:12|Synthesizing module neuron in library work.
+
+	INPUT_SIZE=32'b00000000000000000000000000001010
+	WEIGHT_FILE=288'b001011100010111000101111011100110110111101110101011100100110001101100101001011110110110001100001011110010110010101110010001100010101111101101110011001010111010101110010011011110110111000110010010111110111011101100101011010010110011101101000011101000111001100101110011101000111100001110100
+   Generated name = neuron_10s_../source/layer1_neuron2_weights.txt_Z3
+Opening data file ../source/layer1_neuron2_weights.txt from directory /home/gel8580/CE387/HW/HW8/imp/syn/../source
+@W: CG532 :"/home/gel8580/CE387/HW/HW8/imp/sv/neuron.sv":30:4:30:10|Within an initial block, only Verilog force statements and memory $readmemh/$readmemb initialization statements are recognized, and all other content is ignored.
+Running optimization stage 1 on neuron_10s_../source/layer1_neuron2_weights.txt_Z3 .......
+@W: CL279 :"/home/gel8580/CE387/HW/HW8/imp/sv/neuron.sv":125:4:125:12|Pruning register bits 62 to 46 of product_reg[63:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@N: CG364 :"/home/gel8580/CE387/HW/HW8/imp/sv/neuron.sv":11:7:11:12|Synthesizing module neuron in library work.
+
+	INPUT_SIZE=32'b00000000000000000000000000001010
+	WEIGHT_FILE=288'b001011100010111000101111011100110110111101110101011100100110001101100101001011110110110001100001011110010110010101110010001100010101111101101110011001010111010101110010011011110110111000110011010111110111011101100101011010010110011101101000011101000111001100101110011101000111100001110100
+   Generated name = neuron_10s_../source/layer1_neuron3_weights.txt_Z4
+Opening data file ../source/layer1_neuron3_weights.txt from directory /home/gel8580/CE387/HW/HW8/imp/syn/../source
+@W: CG532 :"/home/gel8580/CE387/HW/HW8/imp/sv/neuron.sv":30:4:30:10|Within an initial block, only Verilog force statements and memory $readmemh/$readmemb initialization statements are recognized, and all other content is ignored.
+Running optimization stage 1 on neuron_10s_../source/layer1_neuron3_weights.txt_Z4 .......
+@W: CL279 :"/home/gel8580/CE387/HW/HW8/imp/sv/neuron.sv":125:4:125:12|Pruning register bits 62 to 46 of product_reg[63:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@N: CG364 :"/home/gel8580/CE387/HW/HW8/imp/sv/neuron.sv":11:7:11:12|Synthesizing module neuron in library work.
+
+	INPUT_SIZE=32'b00000000000000000000000000001010
+	WEIGHT_FILE=288'b001011100010111000101111011100110110111101110101011100100110001101100101001011110110110001100001011110010110010101110010001100010101111101101110011001010111010101110010011011110110111000110100010111110111011101100101011010010110011101101000011101000111001100101110011101000111100001110100
+   Generated name = neuron_10s_../source/layer1_neuron4_weights.txt_Z5
+Opening data file ../source/layer1_neuron4_weights.txt from directory /home/gel8580/CE387/HW/HW8/imp/syn/../source
+@W: CG532 :"/home/gel8580/CE387/HW/HW8/imp/sv/neuron.sv":30:4:30:10|Within an initial block, only Verilog force statements and memory $readmemh/$readmemb initialization statements are recognized, and all other content is ignored.
+Running optimization stage 1 on neuron_10s_../source/layer1_neuron4_weights.txt_Z5 .......
+@W: CL279 :"/home/gel8580/CE387/HW/HW8/imp/sv/neuron.sv":125:4:125:12|Pruning register bits 62 to 46 of product_reg[63:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@N: CG364 :"/home/gel8580/CE387/HW/HW8/imp/sv/neuron.sv":11:7:11:12|Synthesizing module neuron in library work.
+
+	INPUT_SIZE=32'b00000000000000000000000000001010
+	WEIGHT_FILE=288'b001011100010111000101111011100110110111101110101011100100110001101100101001011110110110001100001011110010110010101110010001100010101111101101110011001010111010101110010011011110110111000110101010111110111011101100101011010010110011101101000011101000111001100101110011101000111100001110100
+   Generated name = neuron_10s_../source/layer1_neuron5_weights.txt_Z6
+Opening data file ../source/layer1_neuron5_weights.txt from directory /home/gel8580/CE387/HW/HW8/imp/syn/../source
+@W: CG532 :"/home/gel8580/CE387/HW/HW8/imp/sv/neuron.sv":30:4:30:10|Within an initial block, only Verilog force statements and memory $readmemh/$readmemb initialization statements are recognized, and all other content is ignored.
+Running optimization stage 1 on neuron_10s_../source/layer1_neuron5_weights.txt_Z6 .......
+@W: CL279 :"/home/gel8580/CE387/HW/HW8/imp/sv/neuron.sv":125:4:125:12|Pruning register bits 62 to 46 of product_reg[63:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@N: CG364 :"/home/gel8580/CE387/HW/HW8/imp/sv/neuron.sv":11:7:11:12|Synthesizing module neuron in library work.
+
+	INPUT_SIZE=32'b00000000000000000000000000001010
+	WEIGHT_FILE=288'b001011100010111000101111011100110110111101110101011100100110001101100101001011110110110001100001011110010110010101110010001100010101111101101110011001010111010101110010011011110110111000110110010111110111011101100101011010010110011101101000011101000111001100101110011101000111100001110100
+   Generated name = neuron_10s_../source/layer1_neuron6_weights.txt_Z7
+Opening data file ../source/layer1_neuron6_weights.txt from directory /home/gel8580/CE387/HW/HW8/imp/syn/../source
+@W: CG532 :"/home/gel8580/CE387/HW/HW8/imp/sv/neuron.sv":30:4:30:10|Within an initial block, only Verilog force statements and memory $readmemh/$readmemb initialization statements are recognized, and all other content is ignored.
+Running optimization stage 1 on neuron_10s_../source/layer1_neuron6_weights.txt_Z7 .......
+@W: CL279 :"/home/gel8580/CE387/HW/HW8/imp/sv/neuron.sv":125:4:125:12|Pruning register bits 62 to 46 of product_reg[63:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@N: CG364 :"/home/gel8580/CE387/HW/HW8/imp/sv/neuron.sv":11:7:11:12|Synthesizing module neuron in library work.
+
+	INPUT_SIZE=32'b00000000000000000000000000001010
+	WEIGHT_FILE=288'b001011100010111000101111011100110110111101110101011100100110001101100101001011110110110001100001011110010110010101110010001100010101111101101110011001010111010101110010011011110110111000110111010111110111011101100101011010010110011101101000011101000111001100101110011101000111100001110100
+   Generated name = neuron_10s_../source/layer1_neuron7_weights.txt_Z8
+Opening data file ../source/layer1_neuron7_weights.txt from directory /home/gel8580/CE387/HW/HW8/imp/syn/../source
+@W: CG532 :"/home/gel8580/CE387/HW/HW8/imp/sv/neuron.sv":30:4:30:10|Within an initial block, only Verilog force statements and memory $readmemh/$readmemb initialization statements are recognized, and all other content is ignored.
+Running optimization stage 1 on neuron_10s_../source/layer1_neuron7_weights.txt_Z8 .......
+@W: CL279 :"/home/gel8580/CE387/HW/HW8/imp/sv/neuron.sv":125:4:125:12|Pruning register bits 62 to 46 of product_reg[63:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@N: CG364 :"/home/gel8580/CE387/HW/HW8/imp/sv/neuron.sv":11:7:11:12|Synthesizing module neuron in library work.
+
+	INPUT_SIZE=32'b00000000000000000000000000001010
+	WEIGHT_FILE=288'b001011100010111000101111011100110110111101110101011100100110001101100101001011110110110001100001011110010110010101110010001100010101111101101110011001010111010101110010011011110110111000111000010111110111011101100101011010010110011101101000011101000111001100101110011101000111100001110100
+   Generated name = neuron_10s_../source/layer1_neuron8_weights.txt_Z9
+Opening data file ../source/layer1_neuron8_weights.txt from directory /home/gel8580/CE387/HW/HW8/imp/syn/../source
+@W: CG532 :"/home/gel8580/CE387/HW/HW8/imp/sv/neuron.sv":30:4:30:10|Within an initial block, only Verilog force statements and memory $readmemh/$readmemb initialization statements are recognized, and all other content is ignored.
+Running optimization stage 1 on neuron_10s_../source/layer1_neuron8_weights.txt_Z9 .......
+@W: CL279 :"/home/gel8580/CE387/HW/HW8/imp/sv/neuron.sv":125:4:125:12|Pruning register bits 62 to 46 of product_reg[63:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@N: CG364 :"/home/gel8580/CE387/HW/HW8/imp/sv/neuron.sv":11:7:11:12|Synthesizing module neuron in library work.
+
+	INPUT_SIZE=32'b00000000000000000000000000001010
+	WEIGHT_FILE=288'b001011100010111000101111011100110110111101110101011100100110001101100101001011110110110001100001011110010110010101110010001100010101111101101110011001010111010101110010011011110110111000111001010111110111011101100101011010010110011101101000011101000111001100101110011101000111100001110100
+   Generated name = neuron_10s_../source/layer1_neuron9_weights.txt_Z10
+Opening data file ../source/layer1_neuron9_weights.txt from directory /home/gel8580/CE387/HW/HW8/imp/syn/../source
+@W: CG532 :"/home/gel8580/CE387/HW/HW8/imp/sv/neuron.sv":30:4:30:10|Within an initial block, only Verilog force statements and memory $readmemh/$readmemb initialization statements are recognized, and all other content is ignored.
+Running optimization stage 1 on neuron_10s_../source/layer1_neuron9_weights.txt_Z10 .......
+@W: CL279 :"/home/gel8580/CE387/HW/HW8/imp/sv/neuron.sv":125:4:125:12|Pruning register bits 62 to 46 of product_reg[63:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+Running optimization stage 1 on layer .......
+Running optimization stage 2 on neuron_10s_../source/layer1_neuron9_weights.txt_Z10 .......
+@W: CL279 :"/home/gel8580/CE387/HW/HW8/imp/sv/neuron.sv":125:4:125:12|Pruning register bits 31 to 18 of data_out_r[31:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+Running optimization stage 2 on neuron_10s_../source/layer1_neuron8_weights.txt_Z9 .......
+@W: CL279 :"/home/gel8580/CE387/HW/HW8/imp/sv/neuron.sv":125:4:125:12|Pruning register bits 31 to 18 of data_out_r[31:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+Running optimization stage 2 on neuron_10s_../source/layer1_neuron7_weights.txt_Z8 .......
+@W: CL279 :"/home/gel8580/CE387/HW/HW8/imp/sv/neuron.sv":125:4:125:12|Pruning register bits 31 to 18 of data_out_r[31:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+Running optimization stage 2 on neuron_10s_../source/layer1_neuron6_weights.txt_Z7 .......
+@W: CL279 :"/home/gel8580/CE387/HW/HW8/imp/sv/neuron.sv":125:4:125:12|Pruning register bits 31 to 18 of data_out_r[31:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+Running optimization stage 2 on neuron_10s_../source/layer1_neuron5_weights.txt_Z6 .......
+@W: CL279 :"/home/gel8580/CE387/HW/HW8/imp/sv/neuron.sv":125:4:125:12|Pruning register bits 31 to 18 of data_out_r[31:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+Running optimization stage 2 on neuron_10s_../source/layer1_neuron4_weights.txt_Z5 .......
+@W: CL279 :"/home/gel8580/CE387/HW/HW8/imp/sv/neuron.sv":125:4:125:12|Pruning register bits 31 to 18 of data_out_r[31:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+Running optimization stage 2 on neuron_10s_../source/layer1_neuron3_weights.txt_Z4 .......
+@W: CL279 :"/home/gel8580/CE387/HW/HW8/imp/sv/neuron.sv":125:4:125:12|Pruning register bits 31 to 18 of data_out_r[31:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+Running optimization stage 2 on neuron_10s_../source/layer1_neuron2_weights.txt_Z3 .......
+@W: CL279 :"/home/gel8580/CE387/HW/HW8/imp/sv/neuron.sv":125:4:125:12|Pruning register bits 31 to 18 of data_out_r[31:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+Running optimization stage 2 on neuron_10s_../source/layer1_neuron1_weights.txt_Z2 .......
+@W: CL279 :"/home/gel8580/CE387/HW/HW8/imp/sv/neuron.sv":125:4:125:12|Pruning register bits 31 to 18 of data_out_r[31:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+Running optimization stage 2 on neuron_10s_../source/layer1_neuron0_weights.txt_Z1 .......
+@W: CL279 :"/home/gel8580/CE387/HW/HW8/imp/sv/neuron.sv":125:4:125:12|Pruning register bits 31 to 18 of data_out_r[31:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+Running optimization stage 2 on layer .......
+
+For a summary of runtime and memory usage per design unit, please see file:
+==========================================================
+@L: /home/gel8580/CE387/HW/HW8/imp/syn/rev_1/synwork//distcomp/distcomp0/distcomp0.rt.csv
+

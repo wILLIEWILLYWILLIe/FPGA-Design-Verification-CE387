@@ -12,7 +12,7 @@
 Starting:    /vol/synopsys/fpga/O-2018.09-SP1/linux_a_64/mbin/synplify
 Install:     /vol/synopsys/fpga/O-2018.09-SP1
 Hostname:    finagle.wot.ece.northwestern.edu
-Date:        Mon Mar  2 21:11:58 2026
+Date:        Tue Mar  3 16:54:57 2026
 Version:     O-2018.09-SP1
 
 Arguments:   -product synplify_premier
@@ -25,645 +25,88 @@ License Option: ident
 
 
 
-log file: "/home/gel8580/CE387/Final_Project/FM_Radio/imp/syn/rev_1/fm_radio.srr"
+log file: "/home/gel8580/CE387/HW/HW8/imp/syn/rev_1/nn_top.srr"
 Running: rev_1 in foreground
 
-Running fm_radio|rev_1
+Running nn_top|rev_1
 
-Running Flow: compile (Compile) on fm_radio|rev_1
-# Mon Mar  2 21:14:33 2026
+Running Flow: compile (Compile) on nn_top|rev_1
+# Tue Mar  3 16:55:00 2026
 
-Running Flow: compile_flow (Compile Process) on fm_radio|rev_1
-# Mon Mar  2 21:14:33 2026
+Running Flow: compile_flow (Compile Process) on nn_top|rev_1
+# Tue Mar  3 16:55:00 2026
 License granted for 4 parallel jobs
 
-Running: compiler (Compile Input) on fm_radio|rev_1
-# Mon Mar  2 21:14:33 2026
-Copied /home/gel8580/CE387/Final_Project/FM_Radio/imp/syn/rev_1/synwork/fm_radio_comp.srs to /home/gel8580/CE387/Final_Project/FM_Radio/imp/syn/rev_1/fm_radio.srs
+Running: compiler (Compile Input) on nn_top|rev_1
+# Tue Mar  3 16:55:00 2026
+Copied /home/gel8580/CE387/HW/HW8/imp/syn/rev_1/synwork/nn_top_comp.srs to /home/gel8580/CE387/HW/HW8/imp/syn/rev_1/nn_top.srs
+compiler exited with errors
+Job failed on: nn_top|rev_1
+
+Job: "compiler" terminated with error status: 2
+See log file: "/home/gel8580/CE387/HW/HW8/imp/syn/rev_1/synlog/nn_top_compiler.srr"
+# Tue Mar  3 16:55:04 2026
+
+Return Code: 2
+Run Time:00h:00m:04s
+Complete: Compile Process on nn_top|rev_1
+Complete: Compile on nn_top|rev_1
+Complete: Logic Synthesis on nn_top|rev_1
+0log file: "/home/gel8580/CE387/HW/HW8/imp/syn/rev_1/nn_top.srr"
+Running: rev_1 in foreground
+
+Running nn_top|rev_1
+
+Running Flow: compile (Compile) on nn_top|rev_1
+# Tue Mar  3 16:59:49 2026
+
+Running Flow: compile_flow (Compile Process) on nn_top|rev_1
+# Tue Mar  3 16:59:49 2026
+License granted for 4 parallel jobs
+
+Running: compiler (Compile Input) on nn_top|rev_1
+# Tue Mar  3 16:59:49 2026
+Copied /home/gel8580/CE387/HW/HW8/imp/syn/rev_1/synwork/nn_top_comp.srs to /home/gel8580/CE387/HW/HW8/imp/syn/rev_1/nn_top.srs
 
 compiler completed
-# Mon Mar  2 21:14:43 2026
+# Tue Mar  3 16:59:53 2026
 
 Return Code: 0
-Run Time:00h:00m:10s
+Run Time:00h:00m:04s
 
-Running: multi_srs_gen (Multi-srs Generator) on fm_radio|rev_1
-# Mon Mar  2 21:14:43 2026
+Running: multi_srs_gen (Multi-srs Generator) on nn_top|rev_1
+# Tue Mar  3 16:59:53 2026
 
 multi_srs_gen completed
-# Mon Mar  2 21:14:44 2026
+# Tue Mar  3 16:59:54 2026
 
 Return Code: 0
 Run Time:00h:00m:01s
-Copied /home/gel8580/CE387/Final_Project/FM_Radio/imp/syn/rev_1/synwork/fm_radio_mult.srs to /home/gel8580/CE387/Final_Project/FM_Radio/imp/syn/rev_1/fm_radio.srs
-Complete: Compile Process on fm_radio|rev_1
+Copied /home/gel8580/CE387/HW/HW8/imp/syn/rev_1/synwork/nn_top_mult.srs to /home/gel8580/CE387/HW/HW8/imp/syn/rev_1/nn_top.srs
+Complete: Compile Process on nn_top|rev_1
 
-Running: premap (Premap) on fm_radio|rev_1
-# Mon Mar  2 21:14:44 2026
-
-premap completed with warnings
-# Mon Mar  2 21:14:46 2026
-
-Return Code: 1
-Run Time:00h:00m:02s
-Complete: Compile on fm_radio|rev_1
-
-Running Flow: map (Map) on fm_radio|rev_1
-# Mon Mar  2 21:14:46 2026
-License granted for 4 parallel jobs
-
-Running: fpga_mapper (Map & Optimize) on fm_radio|rev_1
-# Mon Mar  2 21:14:46 2026
-Copied /home/gel8580/CE387/Final_Project/FM_Radio/imp/syn/rev_1/synwork/fm_radio_m.srm to /home/gel8580/CE387/Final_Project/FM_Radio/imp/syn/rev_1/fm_radio.srm
-
-fpga_mapper completed with warnings
-# Mon Mar  2 21:16:00 2026
-
-Return Code: 1
-Run Time:00h:01m:14s
-Complete: Map on fm_radio|rev_1
-Complete: Logic Synthesis on fm_radio|rev_1
-0log file: "/home/gel8580/CE387/Final_Project/FM_Radio/imp/syn/rev_1/fm_radio.srr"
-Running: rev_1 in foreground
-
-Running fm_radio|rev_1
-
-Running Flow: compile (Compile) on fm_radio|rev_1
-# Mon Mar  2 21:26:00 2026
-
-Running Flow: compile_flow (Compile Process) on fm_radio|rev_1
-# Mon Mar  2 21:26:00 2026
-License granted for 4 parallel jobs
-
-Running: compiler (Compile Input) on fm_radio|rev_1
-# Mon Mar  2 21:26:00 2026
-Copied /home/gel8580/CE387/Final_Project/FM_Radio/imp/syn/rev_1/synwork/fm_radio_comp.srs to /home/gel8580/CE387/Final_Project/FM_Radio/imp/syn/rev_1/fm_radio.srs
-
-compiler completed
-# Mon Mar  2 21:26:11 2026
-
-Return Code: 0
-Run Time:00h:00m:11s
-
-Running: multi_srs_gen (Multi-srs Generator) on fm_radio|rev_1
-# Mon Mar  2 21:26:11 2026
-
-multi_srs_gen completed
-# Mon Mar  2 21:26:12 2026
-
-Return Code: 0
-Run Time:00h:00m:01s
-Copied /home/gel8580/CE387/Final_Project/FM_Radio/imp/syn/rev_1/synwork/fm_radio_mult.srs to /home/gel8580/CE387/Final_Project/FM_Radio/imp/syn/rev_1/fm_radio.srs
-Complete: Compile Process on fm_radio|rev_1
-
-Running: premap (Premap) on fm_radio|rev_1
-# Mon Mar  2 21:26:12 2026
+Running: premap (Premap) on nn_top|rev_1
+# Tue Mar  3 16:59:54 2026
 
 premap completed with warnings
-# Mon Mar  2 21:26:14 2026
+# Tue Mar  3 16:59:54 2026
 
 Return Code: 1
-Run Time:00h:00m:02s
-Complete: Compile on fm_radio|rev_1
-
-Running Flow: map (Map) on fm_radio|rev_1
-# Mon Mar  2 21:26:14 2026
-License granted for 4 parallel jobs
-
-Running: fpga_mapper (Map & Optimize) on fm_radio|rev_1
-# Mon Mar  2 21:26:14 2026
-Copied /home/gel8580/CE387/Final_Project/FM_Radio/imp/syn/rev_1/synwork/fm_radio_m.srm to /home/gel8580/CE387/Final_Project/FM_Radio/imp/syn/rev_1/fm_radio.srm
-
-fpga_mapper completed with warnings
-# Mon Mar  2 21:27:54 2026
-
-Return Code: 1
-Run Time:00h:01m:40s
-Complete: Map on fm_radio|rev_1
-Complete: Logic Synthesis on fm_radio|rev_1
-0log file: "/home/gel8580/CE387/Final_Project/FM_Radio/imp/syn/rev_1/fm_radio.srr"
-Running: rev_1 in foreground
-
-Running fm_radio|rev_1
-
-Running Flow: compile (Compile) on fm_radio|rev_1
-# Mon Mar  2 21:36:44 2026
-
-Running Flow: compile_flow (Compile Process) on fm_radio|rev_1
-# Mon Mar  2 21:36:44 2026
-License granted for 4 parallel jobs
-
-Running: compiler (Compile Input) on fm_radio|rev_1
-# Mon Mar  2 21:36:44 2026
-Copied /home/gel8580/CE387/Final_Project/FM_Radio/imp/syn/rev_1/synwork/fm_radio_comp.srs to /home/gel8580/CE387/Final_Project/FM_Radio/imp/syn/rev_1/fm_radio.srs
-
-compiler completed
-# Mon Mar  2 21:36:55 2026
-
-Return Code: 0
-Run Time:00h:00m:11s
-
-Running: multi_srs_gen (Multi-srs Generator) on fm_radio|rev_1
-# Mon Mar  2 21:36:55 2026
-
-multi_srs_gen completed
-# Mon Mar  2 21:36:55 2026
-
-Return Code: 0
 Run Time:00h:00m:00s
-Copied /home/gel8580/CE387/Final_Project/FM_Radio/imp/syn/rev_1/synwork/fm_radio_mult.srs to /home/gel8580/CE387/Final_Project/FM_Radio/imp/syn/rev_1/fm_radio.srs
-Complete: Compile Process on fm_radio|rev_1
+Complete: Compile on nn_top|rev_1
 
-Running: premap (Premap) on fm_radio|rev_1
-# Mon Mar  2 21:36:55 2026
-
-premap completed with warnings
-# Mon Mar  2 21:36:58 2026
-
-Return Code: 1
-Run Time:00h:00m:03s
-Complete: Compile on fm_radio|rev_1
-
-Running Flow: map (Map) on fm_radio|rev_1
-# Mon Mar  2 21:36:58 2026
+Running Flow: map (Map) on nn_top|rev_1
+# Tue Mar  3 16:59:54 2026
 License granted for 4 parallel jobs
 
-Running: fpga_mapper (Map & Optimize) on fm_radio|rev_1
-# Mon Mar  2 21:36:58 2026
-Copied /home/gel8580/CE387/Final_Project/FM_Radio/imp/syn/rev_1/synwork/fm_radio_m.srm to /home/gel8580/CE387/Final_Project/FM_Radio/imp/syn/rev_1/fm_radio.srm
+Running: fpga_mapper (Map & Optimize) on nn_top|rev_1
+# Tue Mar  3 16:59:54 2026
+Copied /home/gel8580/CE387/HW/HW8/imp/syn/rev_1/synwork/nn_top_m.srm to /home/gel8580/CE387/HW/HW8/imp/syn/rev_1/nn_top.srm
 
 fpga_mapper completed with warnings
-# Mon Mar  2 21:38:41 2026
+# Tue Mar  3 17:00:21 2026
 
 Return Code: 1
-Run Time:00h:01m:43s
-Complete: Map on fm_radio|rev_1
-Complete: Logic Synthesis on fm_radio|rev_1
-0log file: "/home/gel8580/CE387/Final_Project/FM_Radio/imp/syn/rev_1/fm_radio.srr"
-Running: rev_1 in foreground
-
-Running fm_radio|rev_1
-
-Running Flow: compile (Compile) on fm_radio|rev_1
-# Mon Mar  2 21:40:47 2026
-
-Running Flow: compile_flow (Compile Process) on fm_radio|rev_1
-# Mon Mar  2 21:40:47 2026
-License granted for 4 parallel jobs
-
-Running: compiler (Compile Input) on fm_radio|rev_1
-# Mon Mar  2 21:40:47 2026
-Copied /home/gel8580/CE387/Final_Project/FM_Radio/imp/syn/rev_1/synwork/fm_radio_comp.srs to /home/gel8580/CE387/Final_Project/FM_Radio/imp/syn/rev_1/fm_radio.srs
-
-compiler completed
-# Mon Mar  2 21:40:58 2026
-
-Return Code: 0
-Run Time:00h:00m:11s
-
-Running: multi_srs_gen (Multi-srs Generator) on fm_radio|rev_1
-# Mon Mar  2 21:40:58 2026
-
-multi_srs_gen completed
-# Mon Mar  2 21:40:58 2026
-
-Return Code: 0
-Run Time:00h:00m:00s
-Copied /home/gel8580/CE387/Final_Project/FM_Radio/imp/syn/rev_1/synwork/fm_radio_mult.srs to /home/gel8580/CE387/Final_Project/FM_Radio/imp/syn/rev_1/fm_radio.srs
-Complete: Compile Process on fm_radio|rev_1
-
-Running: premap (Premap) on fm_radio|rev_1
-# Mon Mar  2 21:40:58 2026
-
-premap completed with warnings
-# Mon Mar  2 21:41:01 2026
-
-Return Code: 1
-Run Time:00h:00m:03s
-Complete: Compile on fm_radio|rev_1
-
-Running Flow: map (Map) on fm_radio|rev_1
-# Mon Mar  2 21:41:01 2026
-License granted for 4 parallel jobs
-
-Running: fpga_mapper (Map & Optimize) on fm_radio|rev_1
-# Mon Mar  2 21:41:01 2026
-Loaded XDM (Hierarchy) data base - elapsed time 0:0 Blocks=9
-@N Implementation '/home/gel8580/CE387/Final_Project/FM_Radio/imp/syn/fm_radio.prj|rev_1' design hierarchy loaded from database
-Copied /home/gel8580/CE387/Final_Project/FM_Radio/imp/syn/rev_1/synwork/fm_radio_m.srm to /home/gel8580/CE387/Final_Project/FM_Radio/imp/syn/rev_1/fm_radio.srm
-
-fpga_mapper completed with warnings
-# Mon Mar  2 21:42:37 2026
-
-Return Code: 1
-Run Time:00h:01m:36s
-Complete: Map on fm_radio|rev_1
-Complete: Logic Synthesis on fm_radio|rev_1
-0log file: "/home/gel8580/CE387/Final_Project/FM_Radio/imp/syn/rev_1/fm_radio.srr"
-Running: rev_1 in foreground
-
-Running fm_radio|rev_1
-
-Running Flow: compile (Compile) on fm_radio|rev_1
-# Mon Mar  2 21:47:52 2026
-
-Running Flow: compile_flow (Compile Process) on fm_radio|rev_1
-# Mon Mar  2 21:47:52 2026
-License granted for 4 parallel jobs
-
-Running: compiler (Compile Input) on fm_radio|rev_1
-# Mon Mar  2 21:47:52 2026
-Copied /home/gel8580/CE387/Final_Project/FM_Radio/imp/syn/rev_1/synwork/fm_radio_comp.srs to /home/gel8580/CE387/Final_Project/FM_Radio/imp/syn/rev_1/fm_radio.srs
-
-compiler completed
-# Mon Mar  2 21:48:03 2026
-
-Return Code: 0
-Run Time:00h:00m:11s
-
-Running: multi_srs_gen (Multi-srs Generator) on fm_radio|rev_1
-# Mon Mar  2 21:48:03 2026
-
-multi_srs_gen completed
-# Mon Mar  2 21:48:03 2026
-
-Return Code: 0
-Run Time:00h:00m:00s
-Copied /home/gel8580/CE387/Final_Project/FM_Radio/imp/syn/rev_1/synwork/fm_radio_mult.srs to /home/gel8580/CE387/Final_Project/FM_Radio/imp/syn/rev_1/fm_radio.srs
-Complete: Compile Process on fm_radio|rev_1
-
-Running: premap (Premap) on fm_radio|rev_1
-# Mon Mar  2 21:48:03 2026
-
-premap completed with warnings
-# Mon Mar  2 21:48:06 2026
-
-Return Code: 1
-Run Time:00h:00m:03s
-Complete: Compile on fm_radio|rev_1
-
-Running Flow: map (Map) on fm_radio|rev_1
-# Mon Mar  2 21:48:06 2026
-License granted for 4 parallel jobs
-
-Running: fpga_mapper (Map & Optimize) on fm_radio|rev_1
-# Mon Mar  2 21:48:06 2026
-Copied /home/gel8580/CE387/Final_Project/FM_Radio/imp/syn/rev_1/synwork/fm_radio_m.srm to /home/gel8580/CE387/Final_Project/FM_Radio/imp/syn/rev_1/fm_radio.srm
-
-fpga_mapper completed with warnings
-# Mon Mar  2 21:49:42 2026
-
-Return Code: 1
-Run Time:00h:01m:36s
-Complete: Map on fm_radio|rev_1
-Complete: Logic Synthesis on fm_radio|rev_1
-0log file: "/home/gel8580/CE387/Final_Project/FM_Radio/imp/syn/rev_1/fm_radio.srr"
-Running: rev_1 in foreground
-
-Running fm_radio|rev_1
-
-Running Flow: compile (Compile) on fm_radio|rev_1
-# Mon Mar  2 21:52:06 2026
-
-Running Flow: compile_flow (Compile Process) on fm_radio|rev_1
-# Mon Mar  2 21:52:06 2026
-License granted for 4 parallel jobs
-
-Running: compiler (Compile Input) on fm_radio|rev_1
-# Mon Mar  2 21:52:06 2026
-Copied /home/gel8580/CE387/Final_Project/FM_Radio/imp/syn/rev_1/synwork/fm_radio_comp.srs to /home/gel8580/CE387/Final_Project/FM_Radio/imp/syn/rev_1/fm_radio.srs
-
-compiler completed
-# Mon Mar  2 21:52:17 2026
-
-Return Code: 0
-Run Time:00h:00m:11s
-
-Running: multi_srs_gen (Multi-srs Generator) on fm_radio|rev_1
-# Mon Mar  2 21:52:17 2026
-
-multi_srs_gen completed
-# Mon Mar  2 21:52:18 2026
-
-Return Code: 0
-Run Time:00h:00m:01s
-Copied /home/gel8580/CE387/Final_Project/FM_Radio/imp/syn/rev_1/synwork/fm_radio_mult.srs to /home/gel8580/CE387/Final_Project/FM_Radio/imp/syn/rev_1/fm_radio.srs
-Complete: Compile Process on fm_radio|rev_1
-
-Running: premap (Premap) on fm_radio|rev_1
-# Mon Mar  2 21:52:18 2026
-
-premap completed with warnings
-# Mon Mar  2 21:52:20 2026
-
-Return Code: 1
-Run Time:00h:00m:02s
-Complete: Compile on fm_radio|rev_1
-
-Running Flow: map (Map) on fm_radio|rev_1
-# Mon Mar  2 21:52:20 2026
-License granted for 4 parallel jobs
-
-Running: fpga_mapper (Map & Optimize) on fm_radio|rev_1
-# Mon Mar  2 21:52:20 2026
-Copied /home/gel8580/CE387/Final_Project/FM_Radio/imp/syn/rev_1/synwork/fm_radio_m.srm to /home/gel8580/CE387/Final_Project/FM_Radio/imp/syn/rev_1/fm_radio.srm
-
-fpga_mapper completed with warnings
-# Mon Mar  2 21:53:59 2026
-
-Return Code: 1
-Run Time:00h:01m:39s
-Complete: Map on fm_radio|rev_1
-Complete: Logic Synthesis on fm_radio|rev_1
-0log file: "/home/gel8580/CE387/Final_Project/FM_Radio/imp/syn/rev_1/fm_radio.srr"
-Running: rev_1 in foreground
-
-Running fm_radio|rev_1
-
-Running Flow: compile (Compile) on fm_radio|rev_1
-# Mon Mar  2 22:33:53 2026
-
-Running Flow: compile_flow (Compile Process) on fm_radio|rev_1
-# Mon Mar  2 22:33:53 2026
-License granted for 4 parallel jobs
-
-Running: compiler (Compile Input) on fm_radio|rev_1
-# Mon Mar  2 22:33:53 2026
-Copied /home/gel8580/CE387/Final_Project/FM_Radio/imp/syn/rev_1/synwork/fm_radio_comp.srs to /home/gel8580/CE387/Final_Project/FM_Radio/imp/syn/rev_1/fm_radio.srs
-
-compiler completed
-# Mon Mar  2 22:34:04 2026
-
-Return Code: 0
-Run Time:00h:00m:11s
-
-Running: multi_srs_gen (Multi-srs Generator) on fm_radio|rev_1
-# Mon Mar  2 22:34:04 2026
-
-multi_srs_gen completed
-# Mon Mar  2 22:34:05 2026
-
-Return Code: 0
-Run Time:00h:00m:01s
-Copied /home/gel8580/CE387/Final_Project/FM_Radio/imp/syn/rev_1/synwork/fm_radio_mult.srs to /home/gel8580/CE387/Final_Project/FM_Radio/imp/syn/rev_1/fm_radio.srs
-Complete: Compile Process on fm_radio|rev_1
-
-Running: premap (Premap) on fm_radio|rev_1
-# Mon Mar  2 22:34:05 2026
-
-premap completed with warnings
-# Mon Mar  2 22:34:07 2026
-
-Return Code: 1
-Run Time:00h:00m:02s
-Complete: Compile on fm_radio|rev_1
-
-Running Flow: map (Map) on fm_radio|rev_1
-# Mon Mar  2 22:34:07 2026
-License granted for 4 parallel jobs
-
-Running: fpga_mapper (Map & Optimize) on fm_radio|rev_1
-# Mon Mar  2 22:34:07 2026
-Copied /home/gel8580/CE387/Final_Project/FM_Radio/imp/syn/rev_1/synwork/fm_radio_m.srm to /home/gel8580/CE387/Final_Project/FM_Radio/imp/syn/rev_1/fm_radio.srm
-
-fpga_mapper completed with warnings
-# Mon Mar  2 22:35:45 2026
-
-Return Code: 1
-Run Time:00h:01m:38s
-Complete: Map on fm_radio|rev_1
-Complete: Logic Synthesis on fm_radio|rev_1
-0log file: "/home/gel8580/CE387/Final_Project/FM_Radio/imp/syn/rev_1/fm_radio.srr"
-Running: rev_1 in foreground
-
-Running fm_radio|rev_1
-
-Running Flow: compile (Compile) on fm_radio|rev_1
-# Mon Mar  2 22:38:09 2026
-
-Running Flow: compile_flow (Compile Process) on fm_radio|rev_1
-# Mon Mar  2 22:38:09 2026
-License granted for 4 parallel jobs
-
-Running: compiler (Compile Input) on fm_radio|rev_1
-# Mon Mar  2 22:38:09 2026
-Copied /home/gel8580/CE387/Final_Project/FM_Radio/imp/syn/rev_1/synwork/fm_radio_comp.srs to /home/gel8580/CE387/Final_Project/FM_Radio/imp/syn/rev_1/fm_radio.srs
-
-compiler completed
-# Mon Mar  2 22:38:19 2026
-
-Return Code: 0
-Run Time:00h:00m:10s
-
-Running: multi_srs_gen (Multi-srs Generator) on fm_radio|rev_1
-# Mon Mar  2 22:38:20 2026
-
-multi_srs_gen completed
-# Mon Mar  2 22:38:20 2026
-
-Return Code: 0
-Run Time:00h:00m:00s
-Copied /home/gel8580/CE387/Final_Project/FM_Radio/imp/syn/rev_1/synwork/fm_radio_mult.srs to /home/gel8580/CE387/Final_Project/FM_Radio/imp/syn/rev_1/fm_radio.srs
-Complete: Compile Process on fm_radio|rev_1
-
-Running: premap (Premap) on fm_radio|rev_1
-# Mon Mar  2 22:38:20 2026
-
-premap completed with warnings
-# Mon Mar  2 22:38:23 2026
-
-Return Code: 1
-Run Time:00h:00m:03s
-Complete: Compile on fm_radio|rev_1
-
-Running Flow: map (Map) on fm_radio|rev_1
-# Mon Mar  2 22:38:23 2026
-License granted for 4 parallel jobs
-
-Running: fpga_mapper (Map & Optimize) on fm_radio|rev_1
-# Mon Mar  2 22:38:23 2026
-Copied /home/gel8580/CE387/Final_Project/FM_Radio/imp/syn/rev_1/synwork/fm_radio_m.srm to /home/gel8580/CE387/Final_Project/FM_Radio/imp/syn/rev_1/fm_radio.srm
-
-fpga_mapper completed with warnings
-# Mon Mar  2 22:40:07 2026
-
-Return Code: 1
-Run Time:00h:01m:44s
-Complete: Map on fm_radio|rev_1
-Complete: Logic Synthesis on fm_radio|rev_1
-0log file: "/home/gel8580/CE387/Final_Project/FM_Radio/imp/syn/rev_1/fm_radio.srr"
-Running: rev_1 in foreground
-
-Running fm_radio|rev_1
-
-Running Flow: compile (Compile) on fm_radio|rev_1
-# Mon Mar  2 23:02:50 2026
-
-Running Flow: compile_flow (Compile Process) on fm_radio|rev_1
-# Mon Mar  2 23:02:50 2026
-License granted for 4 parallel jobs
-
-Running: compiler (Compile Input) on fm_radio|rev_1
-# Mon Mar  2 23:02:50 2026
-Copied /home/gel8580/CE387/Final_Project/FM_Radio/imp/syn/rev_1/synwork/fm_radio_comp.srs to /home/gel8580/CE387/Final_Project/FM_Radio/imp/syn/rev_1/fm_radio.srs
-
-compiler completed
-# Mon Mar  2 23:03:01 2026
-
-Return Code: 0
-Run Time:00h:00m:11s
-
-Running: multi_srs_gen (Multi-srs Generator) on fm_radio|rev_1
-# Mon Mar  2 23:03:01 2026
-
-multi_srs_gen completed
-# Mon Mar  2 23:03:02 2026
-
-Return Code: 0
-Run Time:00h:00m:01s
-Copied /home/gel8580/CE387/Final_Project/FM_Radio/imp/syn/rev_1/synwork/fm_radio_mult.srs to /home/gel8580/CE387/Final_Project/FM_Radio/imp/syn/rev_1/fm_radio.srs
-Complete: Compile Process on fm_radio|rev_1
-
-Running: premap (Premap) on fm_radio|rev_1
-# Mon Mar  2 23:03:02 2026
-
-premap completed with warnings
-# Mon Mar  2 23:03:04 2026
-
-Return Code: 1
-Run Time:00h:00m:02s
-Complete: Compile on fm_radio|rev_1
-
-Running Flow: map (Map) on fm_radio|rev_1
-# Mon Mar  2 23:03:04 2026
-License granted for 4 parallel jobs
-
-Running: fpga_mapper (Map & Optimize) on fm_radio|rev_1
-# Mon Mar  2 23:03:04 2026
-Copied /home/gel8580/CE387/Final_Project/FM_Radio/imp/syn/rev_1/synwork/fm_radio_m.srm to /home/gel8580/CE387/Final_Project/FM_Radio/imp/syn/rev_1/fm_radio.srm
-
-fpga_mapper completed with warnings
-# Mon Mar  2 23:04:50 2026
-
-Return Code: 1
-Run Time:00h:01m:46s
-Complete: Map on fm_radio|rev_1
-Complete: Logic Synthesis on fm_radio|rev_1
-0log file: "/home/gel8580/CE387/Final_Project/FM_Radio/imp/syn/rev_1/fm_radio.srr"
-Running: rev_1 in foreground
-
-Running fm_radio|rev_1
-
-Running Flow: compile (Compile) on fm_radio|rev_1
-# Mon Mar  2 23:11:47 2026
-
-Running Flow: compile_flow (Compile Process) on fm_radio|rev_1
-# Mon Mar  2 23:11:47 2026
-License granted for 4 parallel jobs
-
-Running: compiler (Compile Input) on fm_radio|rev_1
-# Mon Mar  2 23:11:47 2026
-Copied /home/gel8580/CE387/Final_Project/FM_Radio/imp/syn/rev_1/synwork/fm_radio_comp.srs to /home/gel8580/CE387/Final_Project/FM_Radio/imp/syn/rev_1/fm_radio.srs
-
-compiler completed
-# Mon Mar  2 23:11:58 2026
-
-Return Code: 0
-Run Time:00h:00m:11s
-
-Running: multi_srs_gen (Multi-srs Generator) on fm_radio|rev_1
-# Mon Mar  2 23:11:58 2026
-
-multi_srs_gen completed
-# Mon Mar  2 23:11:59 2026
-
-Return Code: 0
-Run Time:00h:00m:01s
-Copied /home/gel8580/CE387/Final_Project/FM_Radio/imp/syn/rev_1/synwork/fm_radio_mult.srs to /home/gel8580/CE387/Final_Project/FM_Radio/imp/syn/rev_1/fm_radio.srs
-Complete: Compile Process on fm_radio|rev_1
-
-Running: premap (Premap) on fm_radio|rev_1
-# Mon Mar  2 23:11:59 2026
-
-premap completed with warnings
-# Mon Mar  2 23:12:01 2026
-
-Return Code: 1
-Run Time:00h:00m:02s
-Complete: Compile on fm_radio|rev_1
-
-Running Flow: map (Map) on fm_radio|rev_1
-# Mon Mar  2 23:12:01 2026
-License granted for 4 parallel jobs
-
-Running: fpga_mapper (Map & Optimize) on fm_radio|rev_1
-# Mon Mar  2 23:12:01 2026
-Copied /home/gel8580/CE387/Final_Project/FM_Radio/imp/syn/rev_1/synwork/fm_radio_m.srm to /home/gel8580/CE387/Final_Project/FM_Radio/imp/syn/rev_1/fm_radio.srm
-
-fpga_mapper completed with warnings
-# Mon Mar  2 23:13:45 2026
-
-Return Code: 1
-Run Time:00h:01m:44s
-Complete: Map on fm_radio|rev_1
-Complete: Logic Synthesis on fm_radio|rev_1
-0log file: "/home/gel8580/CE387/Final_Project/FM_Radio/imp/syn/rev_1/fm_radio.srr"
-Running: rev_1 in foreground
-
-Running fm_radio|rev_1
-
-Running Flow: compile (Compile) on fm_radio|rev_1
-# Mon Mar  2 23:28:18 2026
-
-Running Flow: compile_flow (Compile Process) on fm_radio|rev_1
-# Mon Mar  2 23:28:18 2026
-License granted for 4 parallel jobs
-
-Running: compiler (Compile Input) on fm_radio|rev_1
-# Mon Mar  2 23:28:18 2026
-Copied /home/gel8580/CE387/Final_Project/FM_Radio/imp/syn/rev_1/synwork/fm_radio_comp.srs to /home/gel8580/CE387/Final_Project/FM_Radio/imp/syn/rev_1/fm_radio.srs
-
-compiler completed
-# Mon Mar  2 23:28:29 2026
-
-Return Code: 0
-Run Time:00h:00m:11s
-
-Running: multi_srs_gen (Multi-srs Generator) on fm_radio|rev_1
-# Mon Mar  2 23:28:29 2026
-
-multi_srs_gen completed
-# Mon Mar  2 23:28:29 2026
-
-Return Code: 0
-Run Time:00h:00m:00s
-Copied /home/gel8580/CE387/Final_Project/FM_Radio/imp/syn/rev_1/synwork/fm_radio_mult.srs to /home/gel8580/CE387/Final_Project/FM_Radio/imp/syn/rev_1/fm_radio.srs
-Complete: Compile Process on fm_radio|rev_1
-
-Running: premap (Premap) on fm_radio|rev_1
-# Mon Mar  2 23:28:29 2026
-
-premap completed with warnings
-# Mon Mar  2 23:28:32 2026
-
-Return Code: 1
-Run Time:00h:00m:03s
-Complete: Compile on fm_radio|rev_1
-
-Running Flow: map (Map) on fm_radio|rev_1
-# Mon Mar  2 23:28:32 2026
-License granted for 4 parallel jobs
-
-Running: fpga_mapper (Map & Optimize) on fm_radio|rev_1
-# Mon Mar  2 23:28:32 2026
-Copied /home/gel8580/CE387/Final_Project/FM_Radio/imp/syn/rev_1/synwork/fm_radio_m.srm to /home/gel8580/CE387/Final_Project/FM_Radio/imp/syn/rev_1/fm_radio.srm
-
-fpga_mapper completed with warnings
-# Mon Mar  2 23:30:16 2026
-
-Return Code: 1
-Run Time:00h:01m:44s
-Complete: Map on fm_radio|rev_1
-Complete: Logic Synthesis on fm_radio|rev_1
-0exit status=0
-License checkin: synplifypremierdp
+Run Time:00h:00m:27s
+Complete: Map on nn_top|rev_1
+Complete: Logic Synthesis on nn_top|rev_1

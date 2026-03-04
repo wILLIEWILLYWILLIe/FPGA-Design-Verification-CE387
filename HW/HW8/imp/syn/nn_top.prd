@@ -1,0 +1,13 @@
+#--  Synopsys, Inc.
+#--  Version O-2018.09-SP1
+#--  Project file /home/gel8580/CE387/HW/HW8/imp/syn/nn_top.prd
+#--  Written on Tue Mar  3 15:57:10 2026
+
+#
+### Watch Implementation type ###
+#
+watch_impl -all
+#
+### Watch Implementation properties ###
+#
+watch_prop -clear

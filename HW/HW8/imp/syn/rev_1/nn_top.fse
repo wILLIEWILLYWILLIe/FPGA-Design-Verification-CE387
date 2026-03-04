@@ -1,0 +1,24 @@
+
+fsm_encoding {1527142711} onehot
+
+fsm_state_encoding {1527142711} S_IDLE {0000000001}
+
+fsm_state_encoding {1527142711} S_FIFO_PREFETCH {0000000010}
+
+fsm_state_encoding {1527142711} S_START_L0 {0000000100}
+
+fsm_state_encoding {1527142711} S_RUN_L0 {0000001000}
+
+fsm_state_encoding {1527142711} S_WAIT_L0 {0000010000}
+
+fsm_state_encoding {1527142711} S_START_L1 {0000100000}
+
+fsm_state_encoding {1527142711} S_RUN_L1 {0001000000}
+
+fsm_state_encoding {1527142711} S_WAIT_L1 {0010000000}
+
+fsm_state_encoding {1527142711} S_ARGMAX {0100000000}
+
+fsm_state_encoding {1527142711} S_DONE {1000000000}
+
+fsm_registers {1527142711} {state[9]}  {state[8]}  {state[7]}  {state[6]}  {state[5]}  {state[4]}  {state[3]}  {state[2]}  {state[1]}  {state[0]} 

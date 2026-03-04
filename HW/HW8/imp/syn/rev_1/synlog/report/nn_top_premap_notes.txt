@@ -1,0 +1,26 @@
+@N: MF284 |Setting synthesis effort to medium for the design
+@N: MF915 |Option synthesis_strategy=advanced is enabled. 
+@N: MF248 |Running in 64-bit mode.
+@N: MF666 |Clock conversion enabled. (Command "set_option -fix_gated_and_generated_clocks 1" in the project file.)
+@N: MF284 |Setting synthesis effort to medium for the design
+@N: MH105 |UMR3 is only supported for HAPS-80.
+@N: MH105 |UMR3 is only supported for HAPS-80.
+@N: BN362 :"/home/gel8580/CE387/HW/HW8/imp/sv/neuron.sv":125:4:125:12|Removing sequential instance valid_out_r (in view: work.neuron_10s_\.\.\/source\/layer1_neuron1_weights\.txt_Z2(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@N: BN362 :"/home/gel8580/CE387/HW/HW8/imp/sv/neuron.sv":125:4:125:12|Removing sequential instance valid_out_r (in view: work.neuron_10s_\.\.\/source\/layer1_neuron2_weights\.txt_Z3(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@N: BN362 :"/home/gel8580/CE387/HW/HW8/imp/sv/neuron.sv":125:4:125:12|Removing sequential instance valid_out_r (in view: work.neuron_10s_\.\.\/source\/layer1_neuron3_weights\.txt_Z4(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@N: BN362 :"/home/gel8580/CE387/HW/HW8/imp/sv/neuron.sv":125:4:125:12|Removing sequential instance valid_out_r (in view: work.neuron_10s_\.\.\/source\/layer1_neuron4_weights\.txt_Z5(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@N: BN362 :"/home/gel8580/CE387/HW/HW8/imp/sv/neuron.sv":125:4:125:12|Removing sequential instance valid_out_r (in view: work.neuron_10s_\.\.\/source\/layer1_neuron5_weights\.txt_Z6(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@N: BN362 :"/home/gel8580/CE387/HW/HW8/imp/sv/neuron.sv":125:4:125:12|Removing sequential instance valid_out_r (in view: work.neuron_10s_\.\.\/source\/layer1_neuron6_weights\.txt_Z7(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@N: BN362 :"/home/gel8580/CE387/HW/HW8/imp/sv/neuron.sv":125:4:125:12|Removing sequential instance valid_out_r (in view: work.neuron_10s_\.\.\/source\/layer1_neuron7_weights\.txt_Z8(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@N: BN362 :"/home/gel8580/CE387/HW/HW8/imp/sv/neuron.sv":125:4:125:12|Removing sequential instance valid_out_r (in view: work.neuron_10s_\.\.\/source\/layer1_neuron8_weights\.txt_Z9(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@N: BN362 :"/home/gel8580/CE387/HW/HW8/imp/sv/neuron.sv":125:4:125:12|Removing sequential instance valid_out_r (in view: work.neuron_10s_\.\.\/source\/layer1_neuron9_weights\.txt_Z10(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@N: BN362 :"/home/gel8580/CE387/HW/HW8/imp/sv/neuron.sv":125:4:125:12|Removing sequential instance valid_out_r (in view: work.neuron_784s_\.\.\/source\/layer0_neuron1_weights\.txt_Z2(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@N: BN362 :"/home/gel8580/CE387/HW/HW8/imp/sv/neuron.sv":125:4:125:12|Removing sequential instance valid_out_r (in view: work.neuron_784s_\.\.\/source\/layer0_neuron2_weights\.txt_Z3(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@N: BN362 :"/home/gel8580/CE387/HW/HW8/imp/sv/neuron.sv":125:4:125:12|Removing sequential instance valid_out_r (in view: work.neuron_784s_\.\.\/source\/layer0_neuron3_weights\.txt_Z4(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@N: BN362 :"/home/gel8580/CE387/HW/HW8/imp/sv/neuron.sv":125:4:125:12|Removing sequential instance valid_out_r (in view: work.neuron_784s_\.\.\/source\/layer0_neuron4_weights\.txt_Z5(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@N: BN362 :"/home/gel8580/CE387/HW/HW8/imp/sv/neuron.sv":125:4:125:12|Removing sequential instance valid_out_r (in view: work.neuron_784s_\.\.\/source\/layer0_neuron5_weights\.txt_Z6(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@N: BN362 :"/home/gel8580/CE387/HW/HW8/imp/sv/neuron.sv":125:4:125:12|Removing sequential instance valid_out_r (in view: work.neuron_784s_\.\.\/source\/layer0_neuron6_weights\.txt_Z7(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@N: BN362 :"/home/gel8580/CE387/HW/HW8/imp/sv/neuron.sv":125:4:125:12|Removing sequential instance valid_out_r (in view: work.neuron_784s_\.\.\/source\/layer0_neuron7_weights\.txt_Z8(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@N: BN362 :"/home/gel8580/CE387/HW/HW8/imp/sv/neuron.sv":125:4:125:12|Removing sequential instance valid_out_r (in view: work.neuron_784s_\.\.\/source\/layer0_neuron8_weights\.txt_Z9(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@N: BN362 :"/home/gel8580/CE387/HW/HW8/imp/sv/neuron.sv":125:4:125:12|Removing sequential instance valid_out_r (in view: work.neuron_784s_\.\.\/source\/layer0_neuron9_weights\.txt_Z10(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@N: BN225 |Writing default property annotation file /home/gel8580/CE387/HW/HW8/imp/syn/rev_1/nn_top.sap.

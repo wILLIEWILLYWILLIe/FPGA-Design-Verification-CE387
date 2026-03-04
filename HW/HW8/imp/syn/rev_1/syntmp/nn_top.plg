@@ -1,0 +1,14 @@
+@P:  Part : ep4ce115fc23-7
+@P:  Worst Slack : -1.718
+@P:  nn_top|clk - Estimated Frequency : 87.3 MHz
+@P:  nn_top|clk - Requested Frequency : 102.7 MHz
+@P:  nn_top|clk - Estimated Period : 11.455
+@P:  nn_top|clk - Requested Period : 9.737
+@P:  nn_top|clk - Slack : -1.718
+@P: nn_top Part : ep4ce115fc23-7
+@P: nn_top I/O ATOMs : 35
+@P: nn_top Total LUTs : 6370 
+@P: nn_top Register bits : 3294
+@P: nn_top .Simple_Multipliers_18_bit : 60
+@P: nn_top DSP Blocks : 60 (120 nine-bit DSP elements)
+@P:  CPU Time : 0h:00m:25s

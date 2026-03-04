@@ -1,0 +1,69 @@
+#OPTIONS:"|-layerid|0|-orig_srs|/home/gel8580/CE387/HW/HW8/imp/syn/rev_1/synwork/nn_top_comp.srs|-top|nn_top|-prodtype|synplify_premier|-verification_mode|0|-infer_seqShift|-primux|-fixsmult|-dspmac|-nram|-divnmod|-continue_on_error|-nostructver|-I|/home/gel8580/CE387/HW/HW8/imp/syn/|-I|/vol/synopsys/fpga/O-2018.09-SP1/lib|-sysv|-devicelib|/vol/synopsys/fpga/O-2018.09-SP1/lib/altera/altera.v|-devicelib|/vol/synopsys/fpga/O-2018.09-SP1/lib/altera/quartus_prime181/cycloneive.v|-devicelib|/vol/synopsys/fpga/O-2018.09-SP1/lib/altera/quartus_prime181/altera_mf.v|-devicelib|/vol/synopsys/fpga/O-2018.09-SP1/lib/altera/quartus_prime181/altera_lpm.v|-devicelib|/vol/synopsys/fpga/O-2018.09-SP1/lib/altera/quartus_prime181/altera_primitives.v|-encrypt|-pro|-distcompmode|-noobf|-auto_infer_blackbox|0|-proto|-ui|-fid2|-ram|-sharing|on|-ll|2000|-autosm|-D_MULTIPLE_FILE_COMPILATION_UNIT_|-fast_synthesis|0|-lib|work|-fsysv|-lib|work|-fsysv|-lib|work|-fsysv|-lib|work|-fsysv|-lib|work|-fsysv|-lib|work|-fsysv"
+#CUR:"/vol/synopsys/fpga/O-2018.09-SP1/linux_a_64/c_ver":1543382462
+#CUR:"/vol/synopsys/fpga/O-2018.09-SP1/lib/altera/altera.v":1543381811
+#CUR:"/vol/synopsys/fpga/O-2018.09-SP1/lib/altera/quartus_prime181/cycloneive.v":1543381840
+#CUR:"/vol/synopsys/fpga/O-2018.09-SP1/lib/altera/quartus_prime181/altera_mf.v":1543381839
+#CUR:"/vol/synopsys/fpga/O-2018.09-SP1/lib/altera/quartus_prime181/altera_lpm.v":1543381839
+#CUR:"/vol/synopsys/fpga/O-2018.09-SP1/lib/altera/quartus_prime181/altera_primitives.v":1543381839
+#CUR:"/vol/synopsys/fpga/O-2018.09-SP1/lib/vlog/hypermods.v":1543382268
+#CUR:"/vol/synopsys/fpga/O-2018.09-SP1/lib/vlog/umr_capim.v":1533714205
+#CUR:"/vol/synopsys/fpga/O-2018.09-SP1/lib/synip/hcei/zceistubs.v":1543381931
+#CUR:"/vol/synopsys/fpga/O-2018.09-SP1/lib/vlog/scemi_objects.v":1543382268
+#CUR:"/vol/synopsys/fpga/O-2018.09-SP1/lib/vlog/scemi_pipes.svh":1543382268
+#CUR:"/home/gel8580/CE387/HW/HW8/imp/sv/nn_pkg.sv":1772573393
+#CUR:"/home/gel8580/CE387/HW/HW8/imp/sv/fifo.sv":1772573242
+#CUR:"/home/gel8580/CE387/HW/HW8/imp/sv/neuron.sv":1772576771
+#CUR:"/home/gel8580/CE387/HW/HW8/imp/sv/layer.sv":1772578760
+#CUR:"/home/gel8580/CE387/HW/HW8/imp/sv/argmax.sv":1772576003
+#CUR:"/home/gel8580/CE387/HW/HW8/imp/sv/nn_top.sv":1772578762
+#CUR:"/home/gel8580/CE387/HW/HW8/imp/syn/../source/layer0_biases.txt":1772573488
+#CUR:"/home/gel8580/CE387/HW/HW8/imp/syn/../source/layer0_neuron0_weights.txt":1772573488
+#CUR:"/home/gel8580/CE387/HW/HW8/imp/syn/../source/layer0_neuron1_weights.txt":1772573488
+#CUR:"/home/gel8580/CE387/HW/HW8/imp/syn/../source/layer0_neuron2_weights.txt":1772573488
+#CUR:"/home/gel8580/CE387/HW/HW8/imp/syn/../source/layer0_neuron3_weights.txt":1772573488
+#CUR:"/home/gel8580/CE387/HW/HW8/imp/syn/../source/layer0_neuron4_weights.txt":1772573488
+#CUR:"/home/gel8580/CE387/HW/HW8/imp/syn/../source/layer0_neuron5_weights.txt":1772573488
+#CUR:"/home/gel8580/CE387/HW/HW8/imp/syn/../source/layer0_neuron6_weights.txt":1772573488
+#CUR:"/home/gel8580/CE387/HW/HW8/imp/syn/../source/layer0_neuron7_weights.txt":1772573488
+#CUR:"/home/gel8580/CE387/HW/HW8/imp/syn/../source/layer0_neuron8_weights.txt":1772573488
+#CUR:"/home/gel8580/CE387/HW/HW8/imp/syn/../source/layer0_neuron9_weights.txt":1772573488
+#CUR:"/home/gel8580/CE387/HW/HW8/imp/syn/../source/layer1_biases.txt":1772573488
+#CUR:"/home/gel8580/CE387/HW/HW8/imp/syn/../source/layer1_neuron0_weights.txt":1772573488
+#CUR:"/home/gel8580/CE387/HW/HW8/imp/syn/../source/layer1_neuron1_weights.txt":1772573488
+#CUR:"/home/gel8580/CE387/HW/HW8/imp/syn/../source/layer1_neuron2_weights.txt":1772573488
+#CUR:"/home/gel8580/CE387/HW/HW8/imp/syn/../source/layer1_neuron3_weights.txt":1772573488
+#CUR:"/home/gel8580/CE387/HW/HW8/imp/syn/../source/layer1_neuron4_weights.txt":1772573488
+#CUR:"/home/gel8580/CE387/HW/HW8/imp/syn/../source/layer1_neuron5_weights.txt":1772573488
+#CUR:"/home/gel8580/CE387/HW/HW8/imp/syn/../source/layer1_neuron6_weights.txt":1772573488
+#CUR:"/home/gel8580/CE387/HW/HW8/imp/syn/../source/layer1_neuron7_weights.txt":1772573488
+#CUR:"/home/gel8580/CE387/HW/HW8/imp/syn/../source/layer1_neuron8_weights.txt":1772573488
+#CUR:"/home/gel8580/CE387/HW/HW8/imp/syn/../source/layer1_neuron9_weights.txt":1772573488
+#numinternalfiles:10
+#defaultlanguage:verilog
+0			"/home/gel8580/CE387/HW/HW8/imp/sv/nn_pkg.sv" verilog
+1			"/home/gel8580/CE387/HW/HW8/imp/sv/fifo.sv" verilog
+2			"/home/gel8580/CE387/HW/HW8/imp/sv/neuron.sv" verilog
+3			"/home/gel8580/CE387/HW/HW8/imp/sv/layer.sv" verilog
+4			"/home/gel8580/CE387/HW/HW8/imp/sv/argmax.sv" verilog
+5			"/home/gel8580/CE387/HW/HW8/imp/sv/nn_top.sv" verilog
+#Dependency Lists(Uses List)
+0 -1
+1 -1
+2 0
+3 0 2
+4 0
+5 0 4 3 1
+#Dependency Lists(Users Of)
+0 2 3 4 5
+1 5
+2 3
+3 5
+4 5
+5 -1
+#Design Unit to File Association
+package work nn_pkg 0
+module work fifo 1
+module work neuron 2
+module work layer 3
+module work argmax 4
+module work nn_top 5

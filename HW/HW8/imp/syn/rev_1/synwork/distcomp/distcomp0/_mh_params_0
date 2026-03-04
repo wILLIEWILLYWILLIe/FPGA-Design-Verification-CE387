@@ -1,0 +1,5 @@
+top work.layer
+parameter NUM_NEURONS 10;
+parameter INPUT_SIZE 10;
+parameter LAYER_ID 1;
+parameter BIAS_FILE "../source/layer1_biases.txt";
